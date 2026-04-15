@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row row">
+                <div class="header__logo">
+                    <a href="#"><img src="assets/image/logo.png" alt=""></a>
+                </div>
+                <div class="header__search decs">
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="header__social decs">
+                    <a href="#">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.9876 6.95607C25.6886 5.64439 24.1416 4.60436 22.4366 3.89659C20.7316 3.18881 18.9028 2.82746 17.0568 2.83357C9.3218 2.83357 3.01763 9.13774 3.01763 16.8727C3.01763 19.3519 3.6693 21.7602 4.88763 23.8852L2.9043 31.1669L10.3418 29.2119C12.396 30.3311 14.7051 30.9261 17.0568 30.9261C24.7918 30.9261 31.096 24.6219 31.096 16.8869C31.096 13.1327 29.6368 9.60524 26.9876 6.95607ZM17.0568 28.5461C14.9601 28.5461 12.906 27.9794 11.1068 26.9169L10.6818 26.6619L6.2618 27.8236L7.43763 23.5169L7.1543 23.0777C5.98916 21.2177 5.37061 19.0675 5.3693 16.8727C5.3693 10.4411 10.611 5.19941 17.0426 5.19941C20.1593 5.19941 23.0918 6.41774 25.2876 8.62774C26.3751 9.70988 27.2368 10.9972 27.8229 12.415C28.409 13.8327 28.7077 15.3528 28.7018 16.8869C28.7301 23.3186 23.4885 28.5461 17.0568 28.5461ZM23.4601 19.8194C23.106 19.6494 21.3776 18.7994 21.066 18.6719C20.7401 18.5586 20.5135 18.5019 20.2726 18.8419C20.0318 19.1961 19.366 19.9894 19.1676 20.2161C18.9693 20.4569 18.7568 20.4852 18.4026 20.3011C18.0485 20.1311 16.9151 19.7486 15.5835 18.5586C14.5351 17.6236 13.841 16.4761 13.6285 16.1219C13.4301 15.7677 13.6001 15.5836 13.7843 15.3994C13.9401 15.2436 14.1385 14.9886 14.3085 14.7902C14.4785 14.5919 14.5493 14.4361 14.6626 14.2094C14.776 13.9686 14.7193 13.7702 14.6343 13.6002C14.5493 13.4302 13.841 11.7019 13.5576 10.9936C13.2743 10.3136 12.9768 10.3986 12.7643 10.3844H12.0843C11.8435 10.3844 11.4751 10.4694 11.1493 10.8236C10.8376 11.1777 9.93096 12.0277 9.93096 13.7561C9.93096 15.4844 11.1918 17.1561 11.3618 17.3827C11.5318 17.6236 13.841 21.1652 17.3543 22.6811C18.1901 23.0494 18.8418 23.2619 19.3518 23.4177C20.1876 23.6869 20.9526 23.6444 21.5618 23.5594C22.2418 23.4602 23.6443 22.7094 23.9276 21.8877C24.2251 21.0661 24.2251 20.3719 24.126 20.2161C24.0268 20.0602 23.8143 19.9894 23.4601 19.8194Z" fill="#D10D11" />
+                        </svg>
+                    </a>
+                </div>
+                <button type="button" class="header__button decs"><span>Book an appointment</span></button>
+                <div class="header__lang decs">
+                    <a href="#" class="header__lang-item active">
+                        <span class="header__lang-text">Fi</span>
+                        <span class="header__lang-line">
+                            <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="header__lang-item">
+                        <span class="header__lang-text">En</span>
+                        <span class="header__lang-line">
+                            <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <button class="header__burger">
+                    <svg class="header__burger-icon header__burger-icon--menu" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.875 23.375H26.125M6.875 16.5H26.125M6.875 9.625H17.875" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="header__burger-icon header__burger-icon--close" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5 17.5L10.25 9.25002M10.25 9.25002L2 1M10.25 9.25002L18.5 1M10.25 9.25002L2 17.5" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="burger decs">
+                    <ul class="burger__menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our service</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    <button type="button" class="burger__button"><span>Free consultation</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="burger">
+            <div class="burger__top">
+                <div class="header__search">
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="burger__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3244 17.3234L11.5499 11.5489M11.5499 11.5489L5.77539 5.77441M11.5499 11.5489L17.3244 5.77441M11.5499 11.5489L5.77539 17.3235" stroke="#D10D11" stroke-width="1.4902" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <ul class="burger__menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our service</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <button type="button" class="burger__button"><span>Free consultation</span></button>
+            <div class="header__lang">
+                <a href="#" class="header__lang-item active">
+                    <span class="header__lang-text">Fi</span>
+                    <span class="header__lang-line">
+                        <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="header__lang-item">
+                    <span class="header__lang-text">En</span>
+                    <span class="header__lang-line">
+                        <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="burger__contact">
+                <a href="mainto:info@carbit.fi">info@carbit.fi</a>
+                <div class="burger__contact-line"></div>
+                <a href="tel:+358449864688">+358 44 986 4688</a>
+            </div>
+            <div class="burger__social">
+                <a href="#" class="burger__social-circle"></a>
+                <a href="#" class="burger__social-circle"></a>
+                <a href="#" class="burger__social-circle"></a>
+            </div>
+        </div>
+        <div class="opacite"></div>
+        <section class="first">
+            <div class="container">
+                <div class="first__row row">
+                    <h1 class="first__title title title-white">Your car in safe hands</h1>
+                    <h3 class="first__subtitle">Carbit specializes in advanced vehicle diagnostics, auto electrics, and service for EV and hybrid systems. <br> We identify issues accurately and complete repairs efficiently — without unnecessary work.</h3>
+                    <div class="first__buttons">
+                        <button class="main__button main__button-red" data-popup="book"><span>Book an appointment</span></button>
+                        <button class="main__button main__button-white" data-popup="consultation"><span>Free consultation</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="choose">
+            <div class="container">
+                <div class="choose__row row">
+                    <svg class="choose__svg decs" width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_369_1845)">
+                            <path d="M144 144H138.352C138.311 107.319 123.722 72.1528 97.7844 46.2156C71.8472 20.2784 36.6807 5.68884 0 5.64768L0 0C38.178 0.0430681 74.7799 15.2283 101.776 42.2242C128.772 69.2201 143.957 105.822 144 144Z" fill="url(#paint0_linear_369_1845)" />
+                            <path d="M112.585 144H106.992C106.992 87.6961 58.9925 41.8782 0 41.8782V36.2881C62.0798 36.2881 112.585 84.6044 112.585 144Z" fill="url(#paint1_linear_369_1845)" />
+                            <path d="M74.7547 144H69.0048C68.9846 125.705 61.708 108.165 48.7715 95.2284C35.8349 82.2918 18.295 75.0152 0 74.995L0 69.2451C19.8193 69.2676 38.8204 77.1507 52.8347 91.1651C66.8491 105.179 74.7322 124.181 74.7547 144Z" fill="url(#paint2_linear_369_1845)" />
+                            <path d="M37.283 144H31.7606C31.7511 135.579 28.4019 127.506 22.4476 121.552C16.4934 115.598 8.42052 112.249 0 112.239L0 106.717C9.88457 106.728 19.361 110.66 26.3505 117.649C33.3399 124.639 37.2716 134.115 37.283 144Z" fill="url(#paint3_linear_369_1845)" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_369_1845" x1="72" y1="0" x2="72" y2="144" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D10D11" stop-opacity="0" />
+                            <stop offset="1" stop-color="#D10D11" stop-opacity="0.32" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_369_1845" x1="56.2925" y1="36.2881" x2="56.2925" y2="144" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D10D11" stop-opacity="0" />
+                            <stop offset="1" stop-color="#D10D11" stop-opacity="0.32" />
+                            </linearGradient>
+                            <linearGradient id="paint2_linear_369_1845" x1="37.3774" y1="69.2451" x2="37.3774" y2="144" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D10D11" stop-opacity="0" />
+                            <stop offset="1" stop-color="#D10D11" stop-opacity="0.32" />
+                            </linearGradient>
+                            <linearGradient id="paint3_linear_369_1845" x1="18.6415" y1="106.717" x2="18.6415" y2="144" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#D10D11" stop-opacity="0" />
+                            <stop offset="1" stop-color="#D10D11" stop-opacity="0.32" />
+                            </linearGradient>
+                            <clipPath id="clip0_369_1845">
+                            <rect width="144" height="144" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h2 class="title decs">Why choose Carbit</h2>
+                    <p class="choose__subtitle decs">Advanced diagnostics, modern equipment and experienced specialists ensure accurate results and reliable repairs.</p>
+                    <div class="choose__wrapper">
+                        <div class="choose__item">
+                            <h3 class="subtitle">Advanced Diagnostics</h3>
+                            <p class="text">We use modern diagnostic tools to identify issues quickly and accurately.</p>
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.875 12.142V34.8587C5.875 37.0523 5.875 38.1485 6.30189 38.9863C6.6774 39.7232 7.27613 40.323 8.0131 40.6985C8.8501 41.125 9.94636 41.125 12.1356 41.125H34.8644C37.0536 41.125 38.1483 41.125 38.9853 40.6985C39.7223 40.323 40.323 39.7232 40.6985 38.9863C41.125 38.1493 41.125 37.0546 41.125 34.8653V12.1356C41.125 9.94636 41.125 8.8501 40.6985 8.0131C40.323 7.27613 39.7223 6.6774 38.9853 6.30189C38.1475 5.875 37.0523 5.875 34.8587 5.875H12.142C9.94851 5.875 8.85092 5.875 8.0131 6.30189C7.27613 6.6774 6.6774 7.27613 6.30189 8.0131C5.875 8.85092 5.875 9.94851 5.875 12.142Z" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 28.375L19.875 20.5L25.125 25.75L35.625 15.25" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="choose__item">
+                            <h3 class="subtitle">EV & Hybrid Expertise</h3>
+                            <p class="text">Specialized service for electric and hybrid vehicles with advanced electronic systems.</p>
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M43.1177 21.5355C42.4448 20.6424 39.9452 20.0273 38.8877 18.42C37.8302 16.8126 36.9645 13.3317 34.2731 11.9942C31.5816 10.6567 26.4373 10.2812 23.4998 10.2812C20.5623 10.2812 15.4216 10.6484 12.7265 11.9914C10.0313 13.3344 9.16936 16.8126 8.11186 18.4172C7.05436 20.0218 4.55473 20.6424 3.88186 21.5355C3.20899 22.4287 2.73532 28.0752 3.02356 30.8438C3.3118 33.6123 3.84973 35.25 3.84973 35.25H11.7443C13.0368 35.25 13.4572 34.7644 16.1009 34.5156C19.0017 34.2402 21.8474 34.1484 23.4998 34.1484C25.1521 34.1484 28.0896 34.2402 30.9886 34.5156C33.6323 34.7662 34.0665 35.25 35.3452 35.25H43.148C43.148 35.25 43.6859 33.6123 43.9741 30.8438C44.2624 28.0752 43.7869 22.4287 43.1177 21.5355ZM36.7185 35.25H41.8591V36.7188H36.7185V35.25ZM5.14039 35.25H10.281V36.7188H5.14039V35.25Z" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M23.5186 27.4375C25.547 27.4375 26.3491 27.5222 28.6582 27.8682C29.7992 28.0391 30.7711 28.2478 31.5059 28.4795C31.8731 28.5953 32.1618 28.7111 32.375 28.8203C32.5991 28.9351 32.6846 29.015 32.7012 29.0342L32.707 29.04C32.749 29.0878 32.7675 29.1211 32.7764 29.1396C32.7673 29.1593 32.7458 29.1973 32.6953 29.252C32.4829 29.4818 32.0378 29.7048 31.6094 29.7578C30.4749 29.8863 28.1642 29.8389 23.5283 29.8389C18.8868 29.8389 16.5763 29.8869 15.4434 29.7578H15.4424C15.027 29.7095 14.5467 29.4729 14.3096 29.2207C14.277 29.1861 14.2563 29.1577 14.2422 29.1367C14.251 29.1267 14.2594 29.1123 14.2734 29.0986C14.4711 28.9107 14.8995 28.6669 15.6377 28.4316C16.3552 28.203 17.275 28.0107 18.3584 27.8701C20.6084 27.5783 21.4995 27.4375 23.5186 27.4375ZM8.3457 23.0312C9.14379 23.0511 10.0682 23.1807 11.5225 23.6094H11.5254C11.7829 23.6846 12.0349 23.7754 12.2822 23.877C11.3862 23.9367 10.4883 23.9683 9.58984 23.9688L9.29688 23.958C9.01821 23.9363 8.78686 23.8829 8.62305 23.8096C8.44499 23.7298 8.4177 23.6651 8.4082 23.626C8.37157 23.4294 8.35111 23.2305 8.3457 23.0312ZM38.6543 23.0312C38.6489 23.2299 38.6282 23.428 38.5918 23.624C38.5827 23.6629 38.558 23.7285 38.377 23.8096C38.1586 23.9073 37.8209 23.9678 37.4102 23.9678C36.5117 23.9674 35.6138 23.9367 34.7178 23.877C34.9653 23.7753 35.2179 23.6846 35.4756 23.6094H35.4775C36.9315 23.1808 37.8563 23.0511 38.6543 23.0312Z" stroke="#D10D11" stroke-width="2" />
+                                <path d="M39.6562 17.625H41.125M5.875 17.625H7.34375M7.16016 19.3691C7.16016 19.3691 11.4149 18.2676 23.5 18.2676C35.5851 18.2676 39.8398 19.3691 39.8398 19.3691" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="choose__item">
+                            <h3 class="subtitle">Accurate Repairs</h3>
+                            <p class="text">Our technicians identify the problem the first time and avoid unnecessary repairs.</p>
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.8077 4.89551C31.7307 4.89551 33.551 5.33417 35.1725 6.11555L32.0353 9.2293C31.6054 9.65454 31.2641 10.1608 31.0312 10.7188C30.7983 11.2768 30.6784 11.8755 30.6784 12.4801C30.6784 13.0848 30.7983 13.6834 31.0312 14.2415C31.2641 14.7995 31.6054 15.3057 32.0353 15.731C32.9066 16.5934 34.0831 17.0772 35.3091 17.0772C36.5351 17.0772 37.7116 16.5934 38.583 15.731L41.3765 12.958C41.8465 14.2524 42.104 15.6487 42.104 17.1038C42.104 23.8473 36.5982 29.313 29.8077 29.313C28.1822 29.313 26.6312 28.9997 25.2124 28.4317L12.7976 40.7575C11.9267 41.62 10.7505 42.1039 9.52472 42.1039C8.29896 42.1039 7.12276 41.62 6.25185 40.7575C5.82243 40.3323 5.48155 39.8262 5.24891 39.2685C5.01627 38.7107 4.89648 38.1124 4.89648 37.5081C4.89648 36.9038 5.01627 36.3055 5.24891 35.7478C5.48155 35.19 5.82243 34.6839 6.25185 34.2588L18.557 22.0407C17.8648 20.487 17.5081 18.8047 17.5103 17.1038C17.5103 10.3622 23.0162 4.89551 29.8077 4.89551Z" stroke="#D10D11" stroke-width="2" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="choose__item">
+                            <h3 class="subtitle">Fast Turnaround</h3>
+                            <p class="text">Efficient service processes help reduce downtime and keep your vehicle on the road.</p>
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.5002 44.3891C35.0368 44.3891 44.3891 35.0368 44.3891 23.5002C44.3891 11.9636 35.0368 2.61133 23.5002 2.61133C11.9636 2.61133 2.61133 11.9636 2.61133 23.5002C2.61133 35.0368 11.9636 44.3891 23.5002 44.3891Z" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M23.5 13.6357V25.2407L30.463 32.2036" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service">
+            <svg class="service__svg" width="1205" height="1030" viewBox="0 0 1205 1030" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_369_1761)">
+                    <path d="M602.5 1144.75C901.976 1144.75 1144.75 901.976 1144.75 602.5C1144.75 303.024 901.976 60.25 602.5 60.25C303.024 60.25 60.25 303.024 60.25 602.5C60.25 901.976 303.024 1144.75 602.5 1144.75Z" stroke="#EA580C" stroke-opacity="0.1" stroke-width="2" />
+                    <path d="M602.5 964C802.151 964 964 802.151 964 602.5C964 402.849 802.151 241 602.5 241C402.849 241 241 402.849 241 602.5C241 802.151 402.849 964 602.5 964Z" stroke="#EA580C" stroke-opacity="0.1" stroke-width="2" />
+                    <path d="M602.5 783.25C702.325 783.25 783.25 702.325 783.25 602.5C783.25 502.675 702.325 421.75 602.5 421.75C502.675 421.75 421.75 502.675 421.75 602.5C421.75 702.325 502.675 783.25 602.5 783.25Z" stroke="#EA580C" stroke-opacity="0.1" stroke-width="2" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_369_1761">
+                    <rect width="1205" height="1030" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <div class="container">
+                <div class="service__row row">
+                    <h2 class="title">Services</h2>
+                    <p class="choose__subtitle">Our team delivers accurate diagnostics and reliable repairs using certified equipment and years of experience.</p>
+                    <div class="swiper service-swiper">
+                        <div class="service__wrapper swiper-wrapper">
+                            <div class="service__item swiper-slide">
+                                <div class="service__img"><img src="assets/image/service__img.png" alt=""></div>
+                                <div class="service__content">
+                                    <h3 class="subtitle">Vehicle Diagnostics</h3>
+                                    <p class="text">Advanced fault finding for modern vehicle systems.</p>
+                                </div>
+                                <button class="main__button main__button-red" data-popup="book"><span>Book  service</span></button>
+                            </div>
+                            <div class="service__item swiper-slide">
+                                <div class="service__img"><img src="assets/image/service__img.png" alt=""></div>
+                                <div class="service__content">
+                                    <h3 class="subtitle">EV & Hybrid Repair</h3>
+                                    <p class="text">Service and repair for electric and hybrid powertrains.</p>
+                                </div>
+                                <button class="main__button main__button-red" data-popup="book"><span>Book  service</span></button>
+                            </div>
+                            <div class="service__item swiper-slide">
+                                <div class="service__img"><img src="assets/image/service__img.png" alt=""></div>
+                                <div class="service__content">
+                                    <h3 class="subtitle">Auto Electrical</h3>
+                                    <p class="text">Electrical troubleshooting, wiring, sensors, modules.</p>
+                                </div>
+                                <button class="main__button main__button-red" data-popup="book"><span>Book  service</span></button>
+                            </div>
+                            <div class="service__item swiper-slide">
+                                <div class="service__img"><img src="assets/image/service__img.png" alt=""></div>
+                                <div class="service__content">
+                                    <h3 class="subtitle">Scheduled Maintenance</h3>
+                                    <p class="text">Routine service, fluids, filters, inspections.</p>
+                                </div>
+                                <button class="main__button main__button-red" data-popup="book"><span>Book  service</span></button>
+                            </div>
+                        </div>
+                        <div class="service__pagination"></div>
+                    </div>
+                    <a href="#" class="service__link main__button main__button-white"><span>All service</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="work__title">
+                <svg class="work__title-svg work__title-svg-left" width="500" height="120" viewBox="0 0 500 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 60H80L110 30L140 90L180 60H260L300 20L340 100L380 60H500" stroke="url(#paint0_linear_369_1932)" stroke-width="2" />
+                    <defs>
+                        <linearGradient id="paint0_linear_369_1932" x1="0" y1="60" x2="500" y2="60" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D10D11" />
+                        <stop offset="1" stop-color="#843207" stop-opacity="0.04" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h1 class="title">Our work speaks for itself</h1>
+                <svg class="work__title-svg work__title-svg-right" width="500" height="120" viewBox="0 0 500 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 60H80L110 30L140 90L180 60H260L300 20L340 100L380 60H500" stroke="url(#paint0_linear_369_1932)" stroke-width="2" />
+                    <defs>
+                        <linearGradient id="paint0_linear_369_1932" x1="0" y1="60" x2="500" y2="60" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D10D11" />
+                        <stop offset="1" stop-color="#843207" stop-opacity="0.04" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="container">
+                <div class="work__row row">
+                    <div class="work__bottom">
+                        <div class="work__item" >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <h3 class="work__item-title subtitle">Ruazaki</h3>
+                            <svg class="work__star" width="98" height="17" viewBox="0 0 98 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.61948 0.380868L11.8655 4.8827C11.9659 5.08439 12.1605 5.22414 12.3856 5.25639L17.4077 5.97821C17.9744 6.05961 18.2006 6.74814 17.7907 7.14334L14.1566 10.6474C13.9936 10.8046 13.9196 11.0304 13.9579 11.252L14.816 16.1997C14.9127 16.7577 14.3207 17.1836 13.8135 16.92L9.3214 14.5841C9.12008 14.4797 8.87994 14.4797 8.67863 14.5841L4.18651 16.92C3.67985 17.1836 3.08728 16.7577 3.18405 16.1997L4.04209 11.252C4.08039 11.0304 4.0064 10.8041 3.84338 10.6474L0.209293 7.14334C-0.200587 6.74814 0.0255983 6.05961 0.592289 5.97821L5.61435 5.25639C5.83947 5.22414 6.03406 5.08439 6.13446 4.8827L8.38051 0.380868C8.63409 -0.126956 9.36641 -0.126956 9.61948 0.380868Z" fill="#FFD858"></path>
+                                <path d="M29.6195 0.380868L31.8655 4.8827C31.9665 5.08439 32.1605 5.22414 32.3857 5.25639L37.4077 5.97821C37.9744 6.05961 38.2006 6.74814 37.7907 7.14334L34.1566 10.6474C33.9936 10.8046 33.9196 11.0304 33.9579 11.252L34.8159 16.1997C34.9127 16.7577 34.3207 17.1836 33.8135 16.92L29.3214 14.5841C29.1201 14.4797 28.8799 14.4797 28.6786 14.5841L24.1865 16.92C23.6798 17.1836 23.0873 16.7577 23.1841 16.1997L24.0421 11.252C24.0804 11.0304 24.0064 10.8041 23.8434 10.6474L20.2093 7.14334C19.7994 6.74814 20.0256 6.05961 20.5923 5.97821L25.6144 5.25639C25.8395 5.22414 26.0341 5.08439 26.1345 4.8827L28.3805 0.380868C28.6336 -0.126956 29.3659 -0.126956 29.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M49.6195 0.380868L51.8655 4.8827C51.9665 5.08439 52.1605 5.22414 52.3857 5.25639L57.4077 5.97821C57.9744 6.05961 58.2006 6.74814 57.7907 7.14334L54.1566 10.6474C53.9936 10.8046 53.9196 11.0304 53.9579 11.252L54.8159 16.1997C54.9127 16.7577 54.3207 17.1836 53.8135 16.92L49.3214 14.5841C49.1201 14.4797 48.8799 14.4797 48.6786 14.5841L44.1865 16.92C43.6798 17.1836 43.0873 16.7577 43.1841 16.1997L44.0421 11.252C44.0804 11.0304 44.0064 10.8041 43.8434 10.6474L40.2093 7.14334C39.7994 6.74814 40.0256 6.05961 40.5923 5.97821L45.6144 5.25639C45.8395 5.22414 46.0341 5.08439 46.1345 4.8827L48.3805 0.380868C48.6336 -0.126956 49.3659 -0.126956 49.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M69.6192 0.380868L71.8654 4.8827C71.9658 5.08439 72.1604 5.22414 72.3855 5.25639L77.4077 5.97821C77.9744 6.05961 78.2006 6.74814 77.7907 7.14334L74.1565 10.6474C73.9935 10.8046 73.9195 11.0304 73.9578 11.252L74.8159 16.1997C74.9127 16.7577 74.3206 17.1836 73.8134 16.92L69.3211 14.5841C69.1198 14.4797 68.8797 14.4797 68.6784 14.5841L64.1861 16.92C63.6794 17.1836 63.0873 16.7577 63.1841 16.1997L64.0422 11.252C64.0805 11.0304 64.0065 10.8041 63.8435 10.6474L60.2093 7.14334C59.7994 6.74814 60.0256 6.05961 60.5923 5.97821L65.6145 5.25639C65.8397 5.22414 66.0337 5.08439 66.1347 4.8827L68.3808 0.380868C68.6338 -0.126956 69.3656 -0.126956 69.6192 0.380868Z" fill="#FFD858"></path>
+                                <path d="M89.6192 0.380868L91.8653 4.8827C91.9658 5.08439 92.1603 5.22414 92.3855 5.25639L97.4077 5.97821C97.9744 6.05961 98.2006 6.74814 97.7907 7.14334L94.1565 10.6474C93.9935 10.8046 93.9195 11.0304 93.9578 11.252L94.8159 16.1997C94.9127 16.7577 94.3206 17.1836 93.8134 16.92L89.3211 14.5841C89.1198 14.4797 88.8797 14.4797 88.6784 14.5841L84.1861 16.92C83.6794 17.1836 83.0873 16.7577 83.1841 16.1997L84.0422 11.252C84.0805 11.0304 84.0065 10.8041 83.8435 10.6474L80.2093 7.14334C79.7994 6.74814 80.0256 6.05961 80.5923 5.97821L85.6145 5.25639C85.8396 5.22414 86.0337 5.08439 86.1346 4.8827L88.3808 0.380868C88.6333 -0.126956 89.3656 -0.126956 89.6192 0.380868Z" fill="#FFD858"></path>
+                            </svg>
+                            <p class="work__item-text text">Aivan huippua työtä! Ekaa kertaa heidän asiakkaana. Sisäpesu oli työnalla ja työnjälki oli juuri mitä odotinkin. Ehdottomasti suosittelen muillekkin tätä jos odotat hyvää työnjälkeä.</p>
+                            <div class="work__item-review">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1163 5.42625C12.8806 5.18 12.6369 4.92625 12.545 4.70312C12.46 4.49875 12.455 4.16 12.45 3.83187C12.4406 3.22187 12.4306 2.53062 11.95 2.05C11.4694 1.56937 10.7781 1.55937 10.1681 1.55C9.84 1.545 9.50125 1.54 9.29688 1.455C9.07438 1.36312 8.82 1.11937 8.57375 0.88375C8.1425 0.469375 7.6525 0 7 0C6.3475 0 5.85812 0.469375 5.42625 0.88375C5.18 1.11937 4.92625 1.36312 4.70312 1.455C4.5 1.54 4.16 1.545 3.83187 1.55C3.22187 1.55937 2.53062 1.56937 2.05 2.05C1.56937 2.53062 1.5625 3.22187 1.55 3.83187C1.545 4.16 1.54 4.49875 1.455 4.70312C1.36312 4.92562 1.11937 5.18 0.88375 5.42625C0.469375 5.8575 0 6.3475 0 7C0 7.6525 0.469375 8.14187 0.88375 8.57375C1.11937 8.82 1.36312 9.07375 1.455 9.29688C1.54 9.50125 1.545 9.84 1.55 10.1681C1.55937 10.7781 1.56937 11.4694 2.05 11.95C2.53062 12.4306 3.22187 12.4406 3.83187 12.45C4.16 12.455 4.49875 12.46 4.70312 12.545C4.92562 12.6369 5.18 12.8806 5.42625 13.1163C5.8575 13.5306 6.3475 14 7 14C7.6525 14 8.14187 13.5306 8.57375 13.1163C8.82 12.8806 9.07375 12.6369 9.29688 12.545C9.50125 12.46 9.84 12.455 10.1681 12.45C10.7781 12.4406 11.4694 12.4306 11.95 11.95C12.4306 11.4694 12.4406 10.7781 12.45 10.1681C12.455 9.84 12.46 9.50125 12.545 9.29688C12.6369 9.07438 12.8806 8.82 13.1163 8.57375C13.5306 8.1425 14 7.6525 14 7C14 6.3475 13.5306 5.85812 13.1163 5.42625ZM9.85375 5.85375L6.35375 9.35375C6.30731 9.40024 6.25217 9.43712 6.19147 9.46228C6.13077 9.48744 6.06571 9.50039 6 9.50039C5.93429 9.50039 5.86923 9.48744 5.80853 9.46228C5.74783 9.43712 5.69269 9.40024 5.64625 9.35375L4.14625 7.85375C4.09979 7.8073 4.06294 7.75214 4.0378 7.69145C4.01266 7.63075 3.99972 7.5657 3.99972 7.5C3.99972 7.4343 4.01266 7.36925 4.0378 7.30855C4.06294 7.24786 4.09979 7.1927 4.14625 7.14625C4.24007 7.05243 4.36732 6.99972 4.5 6.99972C4.5657 6.99972 4.63075 7.01266 4.69145 7.0378C4.75214 7.06294 4.8073 7.09979 4.85375 7.14625L6 8.29313L9.14625 5.14625C9.19271 5.09979 9.24786 5.06294 9.30855 5.0378C9.36925 5.01266 9.4343 4.99972 9.5 4.99972C9.5657 4.99972 9.63075 5.01266 9.69145 5.0378C9.75214 5.06294 9.80729 5.09979 9.85375 5.14625C9.90021 5.1927 9.93705 5.24786 9.9622 5.30855C9.98734 5.36925 10.0003 5.4343 10.0003 5.5C10.0003 5.5657 9.98734 5.63075 9.9622 5.69145C9.93705 5.75214 9.90021 5.8073 9.85375 5.85375Z" fill="#D10D11" />
+                                </svg>
+                                <a href="#"><span>review on GoogleMaps</span></a>
+                            </div>
+                        </div>
+                        <div class="work__item " >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <h3 class="work__item-title subtitle">Esa Mikkola</h3>
+                            <svg class="work__star" width="98" height="17" viewBox="0 0 98 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.61948 0.380868L11.8655 4.8827C11.9659 5.08439 12.1605 5.22414 12.3856 5.25639L17.4077 5.97821C17.9744 6.05961 18.2006 6.74814 17.7907 7.14334L14.1566 10.6474C13.9936 10.8046 13.9196 11.0304 13.9579 11.252L14.816 16.1997C14.9127 16.7577 14.3207 17.1836 13.8135 16.92L9.3214 14.5841C9.12008 14.4797 8.87994 14.4797 8.67863 14.5841L4.18651 16.92C3.67985 17.1836 3.08728 16.7577 3.18405 16.1997L4.04209 11.252C4.08039 11.0304 4.0064 10.8041 3.84338 10.6474L0.209293 7.14334C-0.200587 6.74814 0.0255983 6.05961 0.592289 5.97821L5.61435 5.25639C5.83947 5.22414 6.03406 5.08439 6.13446 4.8827L8.38051 0.380868C8.63409 -0.126956 9.36641 -0.126956 9.61948 0.380868Z" fill="#FFD858"></path>
+                                <path d="M29.6195 0.380868L31.8655 4.8827C31.9665 5.08439 32.1605 5.22414 32.3857 5.25639L37.4077 5.97821C37.9744 6.05961 38.2006 6.74814 37.7907 7.14334L34.1566 10.6474C33.9936 10.8046 33.9196 11.0304 33.9579 11.252L34.8159 16.1997C34.9127 16.7577 34.3207 17.1836 33.8135 16.92L29.3214 14.5841C29.1201 14.4797 28.8799 14.4797 28.6786 14.5841L24.1865 16.92C23.6798 17.1836 23.0873 16.7577 23.1841 16.1997L24.0421 11.252C24.0804 11.0304 24.0064 10.8041 23.8434 10.6474L20.2093 7.14334C19.7994 6.74814 20.0256 6.05961 20.5923 5.97821L25.6144 5.25639C25.8395 5.22414 26.0341 5.08439 26.1345 4.8827L28.3805 0.380868C28.6336 -0.126956 29.3659 -0.126956 29.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M49.6195 0.380868L51.8655 4.8827C51.9665 5.08439 52.1605 5.22414 52.3857 5.25639L57.4077 5.97821C57.9744 6.05961 58.2006 6.74814 57.7907 7.14334L54.1566 10.6474C53.9936 10.8046 53.9196 11.0304 53.9579 11.252L54.8159 16.1997C54.9127 16.7577 54.3207 17.1836 53.8135 16.92L49.3214 14.5841C49.1201 14.4797 48.8799 14.4797 48.6786 14.5841L44.1865 16.92C43.6798 17.1836 43.0873 16.7577 43.1841 16.1997L44.0421 11.252C44.0804 11.0304 44.0064 10.8041 43.8434 10.6474L40.2093 7.14334C39.7994 6.74814 40.0256 6.05961 40.5923 5.97821L45.6144 5.25639C45.8395 5.22414 46.0341 5.08439 46.1345 4.8827L48.3805 0.380868C48.6336 -0.126956 49.3659 -0.126956 49.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M69.6192 0.380868L71.8654 4.8827C71.9658 5.08439 72.1604 5.22414 72.3855 5.25639L77.4077 5.97821C77.9744 6.05961 78.2006 6.74814 77.7907 7.14334L74.1565 10.6474C73.9935 10.8046 73.9195 11.0304 73.9578 11.252L74.8159 16.1997C74.9127 16.7577 74.3206 17.1836 73.8134 16.92L69.3211 14.5841C69.1198 14.4797 68.8797 14.4797 68.6784 14.5841L64.1861 16.92C63.6794 17.1836 63.0873 16.7577 63.1841 16.1997L64.0422 11.252C64.0805 11.0304 64.0065 10.8041 63.8435 10.6474L60.2093 7.14334C59.7994 6.74814 60.0256 6.05961 60.5923 5.97821L65.6145 5.25639C65.8397 5.22414 66.0337 5.08439 66.1347 4.8827L68.3808 0.380868C68.6338 -0.126956 69.3656 -0.126956 69.6192 0.380868Z" fill="#FFD858"></path>
+                                <path d="M89.6192 0.380868L91.8653 4.8827C91.9658 5.08439 92.1603 5.22414 92.3855 5.25639L97.4077 5.97821C97.9744 6.05961 98.2006 6.74814 97.7907 7.14334L94.1565 10.6474C93.9935 10.8046 93.9195 11.0304 93.9578 11.252L94.8159 16.1997C94.9127 16.7577 94.3206 17.1836 93.8134 16.92L89.3211 14.5841C89.1198 14.4797 88.8797 14.4797 88.6784 14.5841L84.1861 16.92C83.6794 17.1836 83.0873 16.7577 83.1841 16.1997L84.0422 11.252C84.0805 11.0304 84.0065 10.8041 83.8435 10.6474L80.2093 7.14334C79.7994 6.74814 80.0256 6.05961 80.5923 5.97821L85.6145 5.25639C85.8396 5.22414 86.0337 5.08439 86.1346 4.8827L88.3808 0.380868C88.6333 -0.126956 89.3656 -0.126956 89.6192 0.380868Z" fill="#FFD858"></path>
+                            </svg>
+                            <p class="work__item-text text ">Erittäin ammattimainen ja mukava paikka vaihdattaa renkaat ja ottaa autolle vaikka sisäpuhdistus. Hyvä palvelu, ei mitään valittamista. Hyvä sijainti ainakin Herttoniemessä, helppo löytää.</p>
+                            <div class="work__item-review">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1163 5.42625C12.8806 5.18 12.6369 4.92625 12.545 4.70312C12.46 4.49875 12.455 4.16 12.45 3.83187C12.4406 3.22187 12.4306 2.53062 11.95 2.05C11.4694 1.56937 10.7781 1.55937 10.1681 1.55C9.84 1.545 9.50125 1.54 9.29688 1.455C9.07438 1.36312 8.82 1.11937 8.57375 0.88375C8.1425 0.469375 7.6525 0 7 0C6.3475 0 5.85812 0.469375 5.42625 0.88375C5.18 1.11937 4.92625 1.36312 4.70312 1.455C4.5 1.54 4.16 1.545 3.83187 1.55C3.22187 1.55937 2.53062 1.56937 2.05 2.05C1.56937 2.53062 1.5625 3.22187 1.55 3.83187C1.545 4.16 1.54 4.49875 1.455 4.70312C1.36312 4.92562 1.11937 5.18 0.88375 5.42625C0.469375 5.8575 0 6.3475 0 7C0 7.6525 0.469375 8.14187 0.88375 8.57375C1.11937 8.82 1.36312 9.07375 1.455 9.29688C1.54 9.50125 1.545 9.84 1.55 10.1681C1.55937 10.7781 1.56937 11.4694 2.05 11.95C2.53062 12.4306 3.22187 12.4406 3.83187 12.45C4.16 12.455 4.49875 12.46 4.70312 12.545C4.92562 12.6369 5.18 12.8806 5.42625 13.1163C5.8575 13.5306 6.3475 14 7 14C7.6525 14 8.14187 13.5306 8.57375 13.1163C8.82 12.8806 9.07375 12.6369 9.29688 12.545C9.50125 12.46 9.84 12.455 10.1681 12.45C10.7781 12.4406 11.4694 12.4306 11.95 11.95C12.4306 11.4694 12.4406 10.7781 12.45 10.1681C12.455 9.84 12.46 9.50125 12.545 9.29688C12.6369 9.07438 12.8806 8.82 13.1163 8.57375C13.5306 8.1425 14 7.6525 14 7C14 6.3475 13.5306 5.85812 13.1163 5.42625ZM9.85375 5.85375L6.35375 9.35375C6.30731 9.40024 6.25217 9.43712 6.19147 9.46228C6.13077 9.48744 6.06571 9.50039 6 9.50039C5.93429 9.50039 5.86923 9.48744 5.80853 9.46228C5.74783 9.43712 5.69269 9.40024 5.64625 9.35375L4.14625 7.85375C4.09979 7.8073 4.06294 7.75214 4.0378 7.69145C4.01266 7.63075 3.99972 7.5657 3.99972 7.5C3.99972 7.4343 4.01266 7.36925 4.0378 7.30855C4.06294 7.24786 4.09979 7.1927 4.14625 7.14625C4.24007 7.05243 4.36732 6.99972 4.5 6.99972C4.5657 6.99972 4.63075 7.01266 4.69145 7.0378C4.75214 7.06294 4.8073 7.09979 4.85375 7.14625L6 8.29313L9.14625 5.14625C9.19271 5.09979 9.24786 5.06294 9.30855 5.0378C9.36925 5.01266 9.4343 4.99972 9.5 4.99972C9.5657 4.99972 9.63075 5.01266 9.69145 5.0378C9.75214 5.06294 9.80729 5.09979 9.85375 5.14625C9.90021 5.1927 9.93705 5.24786 9.9622 5.30855C9.98734 5.36925 10.0003 5.4343 10.0003 5.5C10.0003 5.5657 9.98734 5.63075 9.9622 5.69145C9.93705 5.75214 9.90021 5.8073 9.85375 5.85375Z" fill="#D10D11" />
+                                </svg>
+                                <a href="#"><span>review on GoogleMaps</span></a>
+                            </div>
+                        </div>
+                        <div class="work__item " >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <h3 class="work__item-title subtitle">Leo Korhonen</h3>
+                            <svg class="work__star" width="98" height="17" viewBox="0 0 98 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.61948 0.380868L11.8655 4.8827C11.9659 5.08439 12.1605 5.22414 12.3856 5.25639L17.4077 5.97821C17.9744 6.05961 18.2006 6.74814 17.7907 7.14334L14.1566 10.6474C13.9936 10.8046 13.9196 11.0304 13.9579 11.252L14.816 16.1997C14.9127 16.7577 14.3207 17.1836 13.8135 16.92L9.3214 14.5841C9.12008 14.4797 8.87994 14.4797 8.67863 14.5841L4.18651 16.92C3.67985 17.1836 3.08728 16.7577 3.18405 16.1997L4.04209 11.252C4.08039 11.0304 4.0064 10.8041 3.84338 10.6474L0.209293 7.14334C-0.200587 6.74814 0.0255983 6.05961 0.592289 5.97821L5.61435 5.25639C5.83947 5.22414 6.03406 5.08439 6.13446 4.8827L8.38051 0.380868C8.63409 -0.126956 9.36641 -0.126956 9.61948 0.380868Z" fill="#FFD858"></path>
+                                <path d="M29.6195 0.380868L31.8655 4.8827C31.9665 5.08439 32.1605 5.22414 32.3857 5.25639L37.4077 5.97821C37.9744 6.05961 38.2006 6.74814 37.7907 7.14334L34.1566 10.6474C33.9936 10.8046 33.9196 11.0304 33.9579 11.252L34.8159 16.1997C34.9127 16.7577 34.3207 17.1836 33.8135 16.92L29.3214 14.5841C29.1201 14.4797 28.8799 14.4797 28.6786 14.5841L24.1865 16.92C23.6798 17.1836 23.0873 16.7577 23.1841 16.1997L24.0421 11.252C24.0804 11.0304 24.0064 10.8041 23.8434 10.6474L20.2093 7.14334C19.7994 6.74814 20.0256 6.05961 20.5923 5.97821L25.6144 5.25639C25.8395 5.22414 26.0341 5.08439 26.1345 4.8827L28.3805 0.380868C28.6336 -0.126956 29.3659 -0.126956 29.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M49.6195 0.380868L51.8655 4.8827C51.9665 5.08439 52.1605 5.22414 52.3857 5.25639L57.4077 5.97821C57.9744 6.05961 58.2006 6.74814 57.7907 7.14334L54.1566 10.6474C53.9936 10.8046 53.9196 11.0304 53.9579 11.252L54.8159 16.1997C54.9127 16.7577 54.3207 17.1836 53.8135 16.92L49.3214 14.5841C49.1201 14.4797 48.8799 14.4797 48.6786 14.5841L44.1865 16.92C43.6798 17.1836 43.0873 16.7577 43.1841 16.1997L44.0421 11.252C44.0804 11.0304 44.0064 10.8041 43.8434 10.6474L40.2093 7.14334C39.7994 6.74814 40.0256 6.05961 40.5923 5.97821L45.6144 5.25639C45.8395 5.22414 46.0341 5.08439 46.1345 4.8827L48.3805 0.380868C48.6336 -0.126956 49.3659 -0.126956 49.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M69.6192 0.380868L71.8654 4.8827C71.9658 5.08439 72.1604 5.22414 72.3855 5.25639L77.4077 5.97821C77.9744 6.05961 78.2006 6.74814 77.7907 7.14334L74.1565 10.6474C73.9935 10.8046 73.9195 11.0304 73.9578 11.252L74.8159 16.1997C74.9127 16.7577 74.3206 17.1836 73.8134 16.92L69.3211 14.5841C69.1198 14.4797 68.8797 14.4797 68.6784 14.5841L64.1861 16.92C63.6794 17.1836 63.0873 16.7577 63.1841 16.1997L64.0422 11.252C64.0805 11.0304 64.0065 10.8041 63.8435 10.6474L60.2093 7.14334C59.7994 6.74814 60.0256 6.05961 60.5923 5.97821L65.6145 5.25639C65.8397 5.22414 66.0337 5.08439 66.1347 4.8827L68.3808 0.380868C68.6338 -0.126956 69.3656 -0.126956 69.6192 0.380868Z" fill="#FFD858"></path>
+                                <path d="M89.6192 0.380868L91.8653 4.8827C91.9658 5.08439 92.1603 5.22414 92.3855 5.25639L97.4077 5.97821C97.9744 6.05961 98.2006 6.74814 97.7907 7.14334L94.1565 10.6474C93.9935 10.8046 93.9195 11.0304 93.9578 11.252L94.8159 16.1997C94.9127 16.7577 94.3206 17.1836 93.8134 16.92L89.3211 14.5841C89.1198 14.4797 88.8797 14.4797 88.6784 14.5841L84.1861 16.92C83.6794 17.1836 83.0873 16.7577 83.1841 16.1997L84.0422 11.252C84.0805 11.0304 84.0065 10.8041 83.8435 10.6474L80.2093 7.14334C79.7994 6.74814 80.0256 6.05961 80.5923 5.97821L85.6145 5.25639C85.8396 5.22414 86.0337 5.08439 86.1346 4.8827L88.3808 0.380868C88.6333 -0.126956 89.3656 -0.126956 89.6192 0.380868Z" fill="#FFD858"></path>
+                            </svg>
+                            <p class="work__item-text text">Todella hyvää palvelua ja ammattiosaamista. Tällä,kertaa krytex keraaminen pinnoitus. Myös auton pesut ja puhdistukset ym. Vastaavat ammattitaidolla. Hinnatkin aivan kohdillaan.</p>
+                            <div class="work__item-review">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1163 5.42625C12.8806 5.18 12.6369 4.92625 12.545 4.70312C12.46 4.49875 12.455 4.16 12.45 3.83187C12.4406 3.22187 12.4306 2.53062 11.95 2.05C11.4694 1.56937 10.7781 1.55937 10.1681 1.55C9.84 1.545 9.50125 1.54 9.29688 1.455C9.07438 1.36312 8.82 1.11937 8.57375 0.88375C8.1425 0.469375 7.6525 0 7 0C6.3475 0 5.85812 0.469375 5.42625 0.88375C5.18 1.11937 4.92625 1.36312 4.70312 1.455C4.5 1.54 4.16 1.545 3.83187 1.55C3.22187 1.55937 2.53062 1.56937 2.05 2.05C1.56937 2.53062 1.5625 3.22187 1.55 3.83187C1.545 4.16 1.54 4.49875 1.455 4.70312C1.36312 4.92562 1.11937 5.18 0.88375 5.42625C0.469375 5.8575 0 6.3475 0 7C0 7.6525 0.469375 8.14187 0.88375 8.57375C1.11937 8.82 1.36312 9.07375 1.455 9.29688C1.54 9.50125 1.545 9.84 1.55 10.1681C1.55937 10.7781 1.56937 11.4694 2.05 11.95C2.53062 12.4306 3.22187 12.4406 3.83187 12.45C4.16 12.455 4.49875 12.46 4.70312 12.545C4.92562 12.6369 5.18 12.8806 5.42625 13.1163C5.8575 13.5306 6.3475 14 7 14C7.6525 14 8.14187 13.5306 8.57375 13.1163C8.82 12.8806 9.07375 12.6369 9.29688 12.545C9.50125 12.46 9.84 12.455 10.1681 12.45C10.7781 12.4406 11.4694 12.4306 11.95 11.95C12.4306 11.4694 12.4406 10.7781 12.45 10.1681C12.455 9.84 12.46 9.50125 12.545 9.29688C12.6369 9.07438 12.8806 8.82 13.1163 8.57375C13.5306 8.1425 14 7.6525 14 7C14 6.3475 13.5306 5.85812 13.1163 5.42625ZM9.85375 5.85375L6.35375 9.35375C6.30731 9.40024 6.25217 9.43712 6.19147 9.46228C6.13077 9.48744 6.06571 9.50039 6 9.50039C5.93429 9.50039 5.86923 9.48744 5.80853 9.46228C5.74783 9.43712 5.69269 9.40024 5.64625 9.35375L4.14625 7.85375C4.09979 7.8073 4.06294 7.75214 4.0378 7.69145C4.01266 7.63075 3.99972 7.5657 3.99972 7.5C3.99972 7.4343 4.01266 7.36925 4.0378 7.30855C4.06294 7.24786 4.09979 7.1927 4.14625 7.14625C4.24007 7.05243 4.36732 6.99972 4.5 6.99972C4.5657 6.99972 4.63075 7.01266 4.69145 7.0378C4.75214 7.06294 4.8073 7.09979 4.85375 7.14625L6 8.29313L9.14625 5.14625C9.19271 5.09979 9.24786 5.06294 9.30855 5.0378C9.36925 5.01266 9.4343 4.99972 9.5 4.99972C9.5657 4.99972 9.63075 5.01266 9.69145 5.0378C9.75214 5.06294 9.80729 5.09979 9.85375 5.14625C9.90021 5.1927 9.93705 5.24786 9.9622 5.30855C9.98734 5.36925 10.0003 5.4343 10.0003 5.5C10.0003 5.5657 9.98734 5.63075 9.9622 5.69145C9.93705 5.75214 9.90021 5.8073 9.85375 5.85375Z" fill="#D10D11" />
+                                </svg>
+                                <a href="#"><span>review on GoogleMaps</span></a>
+                            </div>
+                        </div>
+                        <div class="work__item " >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <h3 class="work__item-title subtitle">Artjom Anissimov</h3>
+                            <svg class="work__star" width="98" height="17" viewBox="0 0 98 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.61948 0.380868L11.8655 4.8827C11.9659 5.08439 12.1605 5.22414 12.3856 5.25639L17.4077 5.97821C17.9744 6.05961 18.2006 6.74814 17.7907 7.14334L14.1566 10.6474C13.9936 10.8046 13.9196 11.0304 13.9579 11.252L14.816 16.1997C14.9127 16.7577 14.3207 17.1836 13.8135 16.92L9.3214 14.5841C9.12008 14.4797 8.87994 14.4797 8.67863 14.5841L4.18651 16.92C3.67985 17.1836 3.08728 16.7577 3.18405 16.1997L4.04209 11.252C4.08039 11.0304 4.0064 10.8041 3.84338 10.6474L0.209293 7.14334C-0.200587 6.74814 0.0255983 6.05961 0.592289 5.97821L5.61435 5.25639C5.83947 5.22414 6.03406 5.08439 6.13446 4.8827L8.38051 0.380868C8.63409 -0.126956 9.36641 -0.126956 9.61948 0.380868Z" fill="#FFD858"></path>
+                                <path d="M29.6195 0.380868L31.8655 4.8827C31.9665 5.08439 32.1605 5.22414 32.3857 5.25639L37.4077 5.97821C37.9744 6.05961 38.2006 6.74814 37.7907 7.14334L34.1566 10.6474C33.9936 10.8046 33.9196 11.0304 33.9579 11.252L34.8159 16.1997C34.9127 16.7577 34.3207 17.1836 33.8135 16.92L29.3214 14.5841C29.1201 14.4797 28.8799 14.4797 28.6786 14.5841L24.1865 16.92C23.6798 17.1836 23.0873 16.7577 23.1841 16.1997L24.0421 11.252C24.0804 11.0304 24.0064 10.8041 23.8434 10.6474L20.2093 7.14334C19.7994 6.74814 20.0256 6.05961 20.5923 5.97821L25.6144 5.25639C25.8395 5.22414 26.0341 5.08439 26.1345 4.8827L28.3805 0.380868C28.6336 -0.126956 29.3659 -0.126956 29.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M49.6195 0.380868L51.8655 4.8827C51.9665 5.08439 52.1605 5.22414 52.3857 5.25639L57.4077 5.97821C57.9744 6.05961 58.2006 6.74814 57.7907 7.14334L54.1566 10.6474C53.9936 10.8046 53.9196 11.0304 53.9579 11.252L54.8159 16.1997C54.9127 16.7577 54.3207 17.1836 53.8135 16.92L49.3214 14.5841C49.1201 14.4797 48.8799 14.4797 48.6786 14.5841L44.1865 16.92C43.6798 17.1836 43.0873 16.7577 43.1841 16.1997L44.0421 11.252C44.0804 11.0304 44.0064 10.8041 43.8434 10.6474L40.2093 7.14334C39.7994 6.74814 40.0256 6.05961 40.5923 5.97821L45.6144 5.25639C45.8395 5.22414 46.0341 5.08439 46.1345 4.8827L48.3805 0.380868C48.6336 -0.126956 49.3659 -0.126956 49.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M69.6192 0.380868L71.8654 4.8827C71.9658 5.08439 72.1604 5.22414 72.3855 5.25639L77.4077 5.97821C77.9744 6.05961 78.2006 6.74814 77.7907 7.14334L74.1565 10.6474C73.9935 10.8046 73.9195 11.0304 73.9578 11.252L74.8159 16.1997C74.9127 16.7577 74.3206 17.1836 73.8134 16.92L69.3211 14.5841C69.1198 14.4797 68.8797 14.4797 68.6784 14.5841L64.1861 16.92C63.6794 17.1836 63.0873 16.7577 63.1841 16.1997L64.0422 11.252C64.0805 11.0304 64.0065 10.8041 63.8435 10.6474L60.2093 7.14334C59.7994 6.74814 60.0256 6.05961 60.5923 5.97821L65.6145 5.25639C65.8397 5.22414 66.0337 5.08439 66.1347 4.8827L68.3808 0.380868C68.6338 -0.126956 69.3656 -0.126956 69.6192 0.380868Z" fill="#FFD858"></path>
+                                <path d="M89.6192 0.380868L91.8653 4.8827C91.9658 5.08439 92.1603 5.22414 92.3855 5.25639L97.4077 5.97821C97.9744 6.05961 98.2006 6.74814 97.7907 7.14334L94.1565 10.6474C93.9935 10.8046 93.9195 11.0304 93.9578 11.252L94.8159 16.1997C94.9127 16.7577 94.3206 17.1836 93.8134 16.92L89.3211 14.5841C89.1198 14.4797 88.8797 14.4797 88.6784 14.5841L84.1861 16.92C83.6794 17.1836 83.0873 16.7577 83.1841 16.1997L84.0422 11.252C84.0805 11.0304 84.0065 10.8041 83.8435 10.6474L80.2093 7.14334C79.7994 6.74814 80.0256 6.05961 80.5923 5.97821L85.6145 5.25639C85.8396 5.22414 86.0337 5.08439 86.1346 4.8827L88.3808 0.380868C88.6333 -0.126956 89.3656 -0.126956 89.6192 0.380868Z" fill="#FFD858"></path>
+                            </svg>
+                            <p class="work__item-text text">Thanks for clean and fresh car, totally recommend 🤩</p>
+                            <div class="work__item-review">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1163 5.42625C12.8806 5.18 12.6369 4.92625 12.545 4.70312C12.46 4.49875 12.455 4.16 12.45 3.83187C12.4406 3.22187 12.4306 2.53062 11.95 2.05C11.4694 1.56937 10.7781 1.55937 10.1681 1.55C9.84 1.545 9.50125 1.54 9.29688 1.455C9.07438 1.36312 8.82 1.11937 8.57375 0.88375C8.1425 0.469375 7.6525 0 7 0C6.3475 0 5.85812 0.469375 5.42625 0.88375C5.18 1.11937 4.92625 1.36312 4.70312 1.455C4.5 1.54 4.16 1.545 3.83187 1.55C3.22187 1.55937 2.53062 1.56937 2.05 2.05C1.56937 2.53062 1.5625 3.22187 1.55 3.83187C1.545 4.16 1.54 4.49875 1.455 4.70312C1.36312 4.92562 1.11937 5.18 0.88375 5.42625C0.469375 5.8575 0 6.3475 0 7C0 7.6525 0.469375 8.14187 0.88375 8.57375C1.11937 8.82 1.36312 9.07375 1.455 9.29688C1.54 9.50125 1.545 9.84 1.55 10.1681C1.55937 10.7781 1.56937 11.4694 2.05 11.95C2.53062 12.4306 3.22187 12.4406 3.83187 12.45C4.16 12.455 4.49875 12.46 4.70312 12.545C4.92562 12.6369 5.18 12.8806 5.42625 13.1163C5.8575 13.5306 6.3475 14 7 14C7.6525 14 8.14187 13.5306 8.57375 13.1163C8.82 12.8806 9.07375 12.6369 9.29688 12.545C9.50125 12.46 9.84 12.455 10.1681 12.45C10.7781 12.4406 11.4694 12.4306 11.95 11.95C12.4306 11.4694 12.4406 10.7781 12.45 10.1681C12.455 9.84 12.46 9.50125 12.545 9.29688C12.6369 9.07438 12.8806 8.82 13.1163 8.57375C13.5306 8.1425 14 7.6525 14 7C14 6.3475 13.5306 5.85812 13.1163 5.42625ZM9.85375 5.85375L6.35375 9.35375C6.30731 9.40024 6.25217 9.43712 6.19147 9.46228C6.13077 9.48744 6.06571 9.50039 6 9.50039C5.93429 9.50039 5.86923 9.48744 5.80853 9.46228C5.74783 9.43712 5.69269 9.40024 5.64625 9.35375L4.14625 7.85375C4.09979 7.8073 4.06294 7.75214 4.0378 7.69145C4.01266 7.63075 3.99972 7.5657 3.99972 7.5C3.99972 7.4343 4.01266 7.36925 4.0378 7.30855C4.06294 7.24786 4.09979 7.1927 4.14625 7.14625C4.24007 7.05243 4.36732 6.99972 4.5 6.99972C4.5657 6.99972 4.63075 7.01266 4.69145 7.0378C4.75214 7.06294 4.8073 7.09979 4.85375 7.14625L6 8.29313L9.14625 5.14625C9.19271 5.09979 9.24786 5.06294 9.30855 5.0378C9.36925 5.01266 9.4343 4.99972 9.5 4.99972C9.5657 4.99972 9.63075 5.01266 9.69145 5.0378C9.75214 5.06294 9.80729 5.09979 9.85375 5.14625C9.90021 5.1927 9.93705 5.24786 9.9622 5.30855C9.98734 5.36925 10.0003 5.4343 10.0003 5.5C10.0003 5.5657 9.98734 5.63075 9.9622 5.69145C9.93705 5.75214 9.90021 5.8073 9.85375 5.85375Z" fill="#D10D11" />
+                                </svg>
+                                <a href="#"><span>review on GoogleMaps</span></a>
+                            </div>
+                        </div>
+                        <div class="work__item " >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <h3 class="work__item-title subtitle">Chris Morgan</h3>
+                            <svg class="work__star" width="98" height="17" viewBox="0 0 98 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.61948 0.380868L11.8655 4.8827C11.9659 5.08439 12.1605 5.22414 12.3856 5.25639L17.4077 5.97821C17.9744 6.05961 18.2006 6.74814 17.7907 7.14334L14.1566 10.6474C13.9936 10.8046 13.9196 11.0304 13.9579 11.252L14.816 16.1997C14.9127 16.7577 14.3207 17.1836 13.8135 16.92L9.3214 14.5841C9.12008 14.4797 8.87994 14.4797 8.67863 14.5841L4.18651 16.92C3.67985 17.1836 3.08728 16.7577 3.18405 16.1997L4.04209 11.252C4.08039 11.0304 4.0064 10.8041 3.84338 10.6474L0.209293 7.14334C-0.200587 6.74814 0.0255983 6.05961 0.592289 5.97821L5.61435 5.25639C5.83947 5.22414 6.03406 5.08439 6.13446 4.8827L8.38051 0.380868C8.63409 -0.126956 9.36641 -0.126956 9.61948 0.380868Z" fill="#FFD858"></path>
+                                <path d="M29.6195 0.380868L31.8655 4.8827C31.9665 5.08439 32.1605 5.22414 32.3857 5.25639L37.4077 5.97821C37.9744 6.05961 38.2006 6.74814 37.7907 7.14334L34.1566 10.6474C33.9936 10.8046 33.9196 11.0304 33.9579 11.252L34.8159 16.1997C34.9127 16.7577 34.3207 17.1836 33.8135 16.92L29.3214 14.5841C29.1201 14.4797 28.8799 14.4797 28.6786 14.5841L24.1865 16.92C23.6798 17.1836 23.0873 16.7577 23.1841 16.1997L24.0421 11.252C24.0804 11.0304 24.0064 10.8041 23.8434 10.6474L20.2093 7.14334C19.7994 6.74814 20.0256 6.05961 20.5923 5.97821L25.6144 5.25639C25.8395 5.22414 26.0341 5.08439 26.1345 4.8827L28.3805 0.380868C28.6336 -0.126956 29.3659 -0.126956 29.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M49.6195 0.380868L51.8655 4.8827C51.9665 5.08439 52.1605 5.22414 52.3857 5.25639L57.4077 5.97821C57.9744 6.05961 58.2006 6.74814 57.7907 7.14334L54.1566 10.6474C53.9936 10.8046 53.9196 11.0304 53.9579 11.252L54.8159 16.1997C54.9127 16.7577 54.3207 17.1836 53.8135 16.92L49.3214 14.5841C49.1201 14.4797 48.8799 14.4797 48.6786 14.5841L44.1865 16.92C43.6798 17.1836 43.0873 16.7577 43.1841 16.1997L44.0421 11.252C44.0804 11.0304 44.0064 10.8041 43.8434 10.6474L40.2093 7.14334C39.7994 6.74814 40.0256 6.05961 40.5923 5.97821L45.6144 5.25639C45.8395 5.22414 46.0341 5.08439 46.1345 4.8827L48.3805 0.380868C48.6336 -0.126956 49.3659 -0.126956 49.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M69.6192 0.380868L71.8654 4.8827C71.9658 5.08439 72.1604 5.22414 72.3855 5.25639L77.4077 5.97821C77.9744 6.05961 78.2006 6.74814 77.7907 7.14334L74.1565 10.6474C73.9935 10.8046 73.9195 11.0304 73.9578 11.252L74.8159 16.1997C74.9127 16.7577 74.3206 17.1836 73.8134 16.92L69.3211 14.5841C69.1198 14.4797 68.8797 14.4797 68.6784 14.5841L64.1861 16.92C63.6794 17.1836 63.0873 16.7577 63.1841 16.1997L64.0422 11.252C64.0805 11.0304 64.0065 10.8041 63.8435 10.6474L60.2093 7.14334C59.7994 6.74814 60.0256 6.05961 60.5923 5.97821L65.6145 5.25639C65.8397 5.22414 66.0337 5.08439 66.1347 4.8827L68.3808 0.380868C68.6338 -0.126956 69.3656 -0.126956 69.6192 0.380868Z" fill="#FFD858"></path>
+                                <path d="M89.6192 0.380868L91.8653 4.8827C91.9658 5.08439 92.1603 5.22414 92.3855 5.25639L97.4077 5.97821C97.9744 6.05961 98.2006 6.74814 97.7907 7.14334L94.1565 10.6474C93.9935 10.8046 93.9195 11.0304 93.9578 11.252L94.8159 16.1997C94.9127 16.7577 94.3206 17.1836 93.8134 16.92L89.3211 14.5841C89.1198 14.4797 88.8797 14.4797 88.6784 14.5841L84.1861 16.92C83.6794 17.1836 83.0873 16.7577 83.1841 16.1997L84.0422 11.252C84.0805 11.0304 84.0065 10.8041 83.8435 10.6474L80.2093 7.14334C79.7994 6.74814 80.0256 6.05961 80.5923 5.97821L85.6145 5.25639C85.8396 5.22414 86.0337 5.08439 86.1346 4.8827L88.3808 0.380868C88.6333 -0.126956 89.3656 -0.126956 89.6192 0.380868Z" fill="#FFD858"></path>
+                            </svg>
+                            <p class="work__item-text text">Very friendly staff, top quality work. My go-to for keeping the car pristine and the paint preserved!</p>
+                            <div class="work__item-review">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1163 5.42625C12.8806 5.18 12.6369 4.92625 12.545 4.70312C12.46 4.49875 12.455 4.16 12.45 3.83187C12.4406 3.22187 12.4306 2.53062 11.95 2.05C11.4694 1.56937 10.7781 1.55937 10.1681 1.55C9.84 1.545 9.50125 1.54 9.29688 1.455C9.07438 1.36312 8.82 1.11937 8.57375 0.88375C8.1425 0.469375 7.6525 0 7 0C6.3475 0 5.85812 0.469375 5.42625 0.88375C5.18 1.11937 4.92625 1.36312 4.70312 1.455C4.5 1.54 4.16 1.545 3.83187 1.55C3.22187 1.55937 2.53062 1.56937 2.05 2.05C1.56937 2.53062 1.5625 3.22187 1.55 3.83187C1.545 4.16 1.54 4.49875 1.455 4.70312C1.36312 4.92562 1.11937 5.18 0.88375 5.42625C0.469375 5.8575 0 6.3475 0 7C0 7.6525 0.469375 8.14187 0.88375 8.57375C1.11937 8.82 1.36312 9.07375 1.455 9.29688C1.54 9.50125 1.545 9.84 1.55 10.1681C1.55937 10.7781 1.56937 11.4694 2.05 11.95C2.53062 12.4306 3.22187 12.4406 3.83187 12.45C4.16 12.455 4.49875 12.46 4.70312 12.545C4.92562 12.6369 5.18 12.8806 5.42625 13.1163C5.8575 13.5306 6.3475 14 7 14C7.6525 14 8.14187 13.5306 8.57375 13.1163C8.82 12.8806 9.07375 12.6369 9.29688 12.545C9.50125 12.46 9.84 12.455 10.1681 12.45C10.7781 12.4406 11.4694 12.4306 11.95 11.95C12.4306 11.4694 12.4406 10.7781 12.45 10.1681C12.455 9.84 12.46 9.50125 12.545 9.29688C12.6369 9.07438 12.8806 8.82 13.1163 8.57375C13.5306 8.1425 14 7.6525 14 7C14 6.3475 13.5306 5.85812 13.1163 5.42625ZM9.85375 5.85375L6.35375 9.35375C6.30731 9.40024 6.25217 9.43712 6.19147 9.46228C6.13077 9.48744 6.06571 9.50039 6 9.50039C5.93429 9.50039 5.86923 9.48744 5.80853 9.46228C5.74783 9.43712 5.69269 9.40024 5.64625 9.35375L4.14625 7.85375C4.09979 7.8073 4.06294 7.75214 4.0378 7.69145C4.01266 7.63075 3.99972 7.5657 3.99972 7.5C3.99972 7.4343 4.01266 7.36925 4.0378 7.30855C4.06294 7.24786 4.09979 7.1927 4.14625 7.14625C4.24007 7.05243 4.36732 6.99972 4.5 6.99972C4.5657 6.99972 4.63075 7.01266 4.69145 7.0378C4.75214 7.06294 4.8073 7.09979 4.85375 7.14625L6 8.29313L9.14625 5.14625C9.19271 5.09979 9.24786 5.06294 9.30855 5.0378C9.36925 5.01266 9.4343 4.99972 9.5 4.99972C9.5657 4.99972 9.63075 5.01266 9.69145 5.0378C9.75214 5.06294 9.80729 5.09979 9.85375 5.14625C9.90021 5.1927 9.93705 5.24786 9.9622 5.30855C9.98734 5.36925 10.0003 5.4343 10.0003 5.5C10.0003 5.5657 9.98734 5.63075 9.9622 5.69145C9.93705 5.75214 9.90021 5.8073 9.85375 5.85375Z" fill="#D10D11" />
+                                </svg>
+                                <a href="#"><span>review on GoogleMaps</span></a>
+                            </div>
+                        </div>
+                        <div class="work__item " >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <h3 class="work__item-title subtitle">Kyryll Vynokurov</h3>
+                            <svg class="work__star" width="98" height="17" viewBox="0 0 98 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.61948 0.380868L11.8655 4.8827C11.9659 5.08439 12.1605 5.22414 12.3856 5.25639L17.4077 5.97821C17.9744 6.05961 18.2006 6.74814 17.7907 7.14334L14.1566 10.6474C13.9936 10.8046 13.9196 11.0304 13.9579 11.252L14.816 16.1997C14.9127 16.7577 14.3207 17.1836 13.8135 16.92L9.3214 14.5841C9.12008 14.4797 8.87994 14.4797 8.67863 14.5841L4.18651 16.92C3.67985 17.1836 3.08728 16.7577 3.18405 16.1997L4.04209 11.252C4.08039 11.0304 4.0064 10.8041 3.84338 10.6474L0.209293 7.14334C-0.200587 6.74814 0.0255983 6.05961 0.592289 5.97821L5.61435 5.25639C5.83947 5.22414 6.03406 5.08439 6.13446 4.8827L8.38051 0.380868C8.63409 -0.126956 9.36641 -0.126956 9.61948 0.380868Z" fill="#FFD858"></path>
+                                <path d="M29.6195 0.380868L31.8655 4.8827C31.9665 5.08439 32.1605 5.22414 32.3857 5.25639L37.4077 5.97821C37.9744 6.05961 38.2006 6.74814 37.7907 7.14334L34.1566 10.6474C33.9936 10.8046 33.9196 11.0304 33.9579 11.252L34.8159 16.1997C34.9127 16.7577 34.3207 17.1836 33.8135 16.92L29.3214 14.5841C29.1201 14.4797 28.8799 14.4797 28.6786 14.5841L24.1865 16.92C23.6798 17.1836 23.0873 16.7577 23.1841 16.1997L24.0421 11.252C24.0804 11.0304 24.0064 10.8041 23.8434 10.6474L20.2093 7.14334C19.7994 6.74814 20.0256 6.05961 20.5923 5.97821L25.6144 5.25639C25.8395 5.22414 26.0341 5.08439 26.1345 4.8827L28.3805 0.380868C28.6336 -0.126956 29.3659 -0.126956 29.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M49.6195 0.380868L51.8655 4.8827C51.9665 5.08439 52.1605 5.22414 52.3857 5.25639L57.4077 5.97821C57.9744 6.05961 58.2006 6.74814 57.7907 7.14334L54.1566 10.6474C53.9936 10.8046 53.9196 11.0304 53.9579 11.252L54.8159 16.1997C54.9127 16.7577 54.3207 17.1836 53.8135 16.92L49.3214 14.5841C49.1201 14.4797 48.8799 14.4797 48.6786 14.5841L44.1865 16.92C43.6798 17.1836 43.0873 16.7577 43.1841 16.1997L44.0421 11.252C44.0804 11.0304 44.0064 10.8041 43.8434 10.6474L40.2093 7.14334C39.7994 6.74814 40.0256 6.05961 40.5923 5.97821L45.6144 5.25639C45.8395 5.22414 46.0341 5.08439 46.1345 4.8827L48.3805 0.380868C48.6336 -0.126956 49.3659 -0.126956 49.6195 0.380868Z" fill="#FFD858"></path>
+                                <path d="M69.6192 0.380868L71.8654 4.8827C71.9658 5.08439 72.1604 5.22414 72.3855 5.25639L77.4077 5.97821C77.9744 6.05961 78.2006 6.74814 77.7907 7.14334L74.1565 10.6474C73.9935 10.8046 73.9195 11.0304 73.9578 11.252L74.8159 16.1997C74.9127 16.7577 74.3206 17.1836 73.8134 16.92L69.3211 14.5841C69.1198 14.4797 68.8797 14.4797 68.6784 14.5841L64.1861 16.92C63.6794 17.1836 63.0873 16.7577 63.1841 16.1997L64.0422 11.252C64.0805 11.0304 64.0065 10.8041 63.8435 10.6474L60.2093 7.14334C59.7994 6.74814 60.0256 6.05961 60.5923 5.97821L65.6145 5.25639C65.8397 5.22414 66.0337 5.08439 66.1347 4.8827L68.3808 0.380868C68.6338 -0.126956 69.3656 -0.126956 69.6192 0.380868Z" fill="#FFD858"></path>
+                                <path d="M89.6192 0.380868L91.8653 4.8827C91.9658 5.08439 92.1603 5.22414 92.3855 5.25639L97.4077 5.97821C97.9744 6.05961 98.2006 6.74814 97.7907 7.14334L94.1565 10.6474C93.9935 10.8046 93.9195 11.0304 93.9578 11.252L94.8159 16.1997C94.9127 16.7577 94.3206 17.1836 93.8134 16.92L89.3211 14.5841C89.1198 14.4797 88.8797 14.4797 88.6784 14.5841L84.1861 16.92C83.6794 17.1836 83.0873 16.7577 83.1841 16.1997L84.0422 11.252C84.0805 11.0304 84.0065 10.8041 83.8435 10.6474L80.2093 7.14334C79.7994 6.74814 80.0256 6.05961 80.5923 5.97821L85.6145 5.25639C85.8396 5.22414 86.0337 5.08439 86.1346 4.8827L88.3808 0.380868C88.6333 -0.126956 89.3656 -0.126956 89.6192 0.380868Z" fill="#FFD858"></path>
+                            </svg>
+                            <p class="work__item-text text">Incredible value at this price. The only place I go to for a car wash. Got detailing done there as well</p>
+                            <div class="work__item-review">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1163 5.42625C12.8806 5.18 12.6369 4.92625 12.545 4.70312C12.46 4.49875 12.455 4.16 12.45 3.83187C12.4406 3.22187 12.4306 2.53062 11.95 2.05C11.4694 1.56937 10.7781 1.55937 10.1681 1.55C9.84 1.545 9.50125 1.54 9.29688 1.455C9.07438 1.36312 8.82 1.11937 8.57375 0.88375C8.1425 0.469375 7.6525 0 7 0C6.3475 0 5.85812 0.469375 5.42625 0.88375C5.18 1.11937 4.92625 1.36312 4.70312 1.455C4.5 1.54 4.16 1.545 3.83187 1.55C3.22187 1.55937 2.53062 1.56937 2.05 2.05C1.56937 2.53062 1.5625 3.22187 1.55 3.83187C1.545 4.16 1.54 4.49875 1.455 4.70312C1.36312 4.92562 1.11937 5.18 0.88375 5.42625C0.469375 5.8575 0 6.3475 0 7C0 7.6525 0.469375 8.14187 0.88375 8.57375C1.11937 8.82 1.36312 9.07375 1.455 9.29688C1.54 9.50125 1.545 9.84 1.55 10.1681C1.55937 10.7781 1.56937 11.4694 2.05 11.95C2.53062 12.4306 3.22187 12.4406 3.83187 12.45C4.16 12.455 4.49875 12.46 4.70312 12.545C4.92562 12.6369 5.18 12.8806 5.42625 13.1163C5.8575 13.5306 6.3475 14 7 14C7.6525 14 8.14187 13.5306 8.57375 13.1163C8.82 12.8806 9.07375 12.6369 9.29688 12.545C9.50125 12.46 9.84 12.455 10.1681 12.45C10.7781 12.4406 11.4694 12.4306 11.95 11.95C12.4306 11.4694 12.4406 10.7781 12.45 10.1681C12.455 9.84 12.46 9.50125 12.545 9.29688C12.6369 9.07438 12.8806 8.82 13.1163 8.57375C13.5306 8.1425 14 7.6525 14 7C14 6.3475 13.5306 5.85812 13.1163 5.42625ZM9.85375 5.85375L6.35375 9.35375C6.30731 9.40024 6.25217 9.43712 6.19147 9.46228C6.13077 9.48744 6.06571 9.50039 6 9.50039C5.93429 9.50039 5.86923 9.48744 5.80853 9.46228C5.74783 9.43712 5.69269 9.40024 5.64625 9.35375L4.14625 7.85375C4.09979 7.8073 4.06294 7.75214 4.0378 7.69145C4.01266 7.63075 3.99972 7.5657 3.99972 7.5C3.99972 7.4343 4.01266 7.36925 4.0378 7.30855C4.06294 7.24786 4.09979 7.1927 4.14625 7.14625C4.24007 7.05243 4.36732 6.99972 4.5 6.99972C4.5657 6.99972 4.63075 7.01266 4.69145 7.0378C4.75214 7.06294 4.8073 7.09979 4.85375 7.14625L6 8.29313L9.14625 5.14625C9.19271 5.09979 9.24786 5.06294 9.30855 5.0378C9.36925 5.01266 9.4343 4.99972 9.5 4.99972C9.5657 4.99972 9.63075 5.01266 9.69145 5.0378C9.75214 5.06294 9.80729 5.09979 9.85375 5.14625C9.90021 5.1927 9.93705 5.24786 9.9622 5.30855C9.98734 5.36925 10.0003 5.4343 10.0003 5.5C10.0003 5.5657 9.98734 5.63075 9.9622 5.69145C9.93705 5.75214 9.90021 5.8073 9.85375 5.85375Z" fill="#D10D11" />
+                                </svg>
+                                <a href="#"><span>review on GoogleMaps</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sert">
+            <div class="container">
+                <div class="sert__row row">
+                    <div class="sert__top">
+                        <div class="sert__img"><img src="assets/image/sertificate.png" alt=""></div>
+                        <div class="sert__content">
+                            <h1 class="title">Carbit — Your trusted partner in modern vehicle service</h1>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                        </div>
+                    </div>
+                    <div class="sert__bottom">
+                        <a href="#" class="main__button main__button-white"><span>All service</span></a>
+                        <button type="button" class="main__button main__button-red"><span>Book an appointnen</span></button>
+                    </div>
+                </div>
+            </div>
+            <img class="sert__back" src="assets/image/sert-back.png" alt="">
+        </section>
+        <section class="plus">
+            <div class="container">
+                <div class="plus__grid">
+                    <div class="plus__item">
+                        <svg class="plus__circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.60491" cy="5.60491" r="5.60491" fill="#D10D11" />
+                        </svg>
+                        <h3 class="plus__title">Systematic approach:</h3>
+                        <p class="text">each stage is well thought out and regulated</p>
+                    </div>
+                    <div class="plus__item">
+                        <svg class="plus__circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.60491" cy="5.60491" r="5.60491" fill="#D10D11" />
+                        </svg>
+                        <h3 class="plus__title">Systematic approach:</h3>
+                        <p class="text">each stage is well thought out and regulated</p>
+                    </div>
+                    <div class="plus__item">
+                        <svg class="plus__circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.60491" cy="5.60491" r="5.60491" fill="#D10D11" />
+                        </svg>
+                        <h3 class="plus__title">Systematic approach:</h3>
+                        <p class="text">each stage is well thought out and regulated</p>
+                    </div>
+                    <div class="plus__item">
+                        <svg class="plus__circle" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5.60491" cy="5.60491" r="5.60491" fill="#D10D11" />
+                        </svg>
+                        <h3 class="plus__title">Systematic approach:</h3>
+                        <p class="text">each stage is well thought out and regulated</p>
+                    </div>
+                    <div class="plus__img decs">
+                        <img src="assets/image/plus__img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="article">
+            <div class="container">
+                <div class="article__row row">
+                    <div class="article__title">
+                        <svg class="article__title-left" width="239" height="69" viewBox="0 0 239 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 38.5C6.70914 38.5 8.5 36.7091 8.5 34.5C8.5 32.2909 6.70914 30.5 4.5 30.5C2.29086 30.5 0.5 32.2909 0.5 34.5C0.5 36.7091 2.29086 38.5 4.5 38.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M94.5 8.5C96.7091 8.5 98.5 6.70914 98.5 4.5C98.5 2.29086 96.7091 0.5 94.5 0.5C92.2909 0.5 90.5 2.29086 90.5 4.5C90.5 6.70914 92.2909 8.5 94.5 8.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M174.5 68.5C176.709 68.5 178.5 66.7091 178.5 64.5C178.5 62.2909 176.709 60.5 174.5 60.5C172.291 60.5 170.5 62.2909 170.5 64.5C170.5 66.7091 172.291 68.5 174.5 68.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M234.5 18.5C236.709 18.5 238.5 16.7091 238.5 14.5C238.5 12.2909 236.709 10.5 234.5 10.5C232.291 10.5 230.5 12.2909 230.5 14.5C230.5 16.7091 232.291 18.5 234.5 18.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M4.5 34.5L94.5 4.5" stroke="#D10D11" />
+                            <path d="M94.5 4.5L174.5 64.5" stroke="#D10D11" />
+                            <path d="M174.5 64.5L234.5 14.5" stroke="#D10D11" />
+                        </svg>
+                        <h1>Discover helpful articles here</h1>
+                        <svg class="article__title-right" width="239" height="69" viewBox="0 0 239 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 38.5C6.70914 38.5 8.5 36.7091 8.5 34.5C8.5 32.2909 6.70914 30.5 4.5 30.5C2.29086 30.5 0.5 32.2909 0.5 34.5C0.5 36.7091 2.29086 38.5 4.5 38.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M94.5 8.5C96.7091 8.5 98.5 6.70914 98.5 4.5C98.5 2.29086 96.7091 0.5 94.5 0.5C92.2909 0.5 90.5 2.29086 90.5 4.5C90.5 6.70914 92.2909 8.5 94.5 8.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M174.5 68.5C176.709 68.5 178.5 66.7091 178.5 64.5C178.5 62.2909 176.709 60.5 174.5 60.5C172.291 60.5 170.5 62.2909 170.5 64.5C170.5 66.7091 172.291 68.5 174.5 68.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M234.5 18.5C236.709 18.5 238.5 16.7091 238.5 14.5C238.5 12.2909 236.709 10.5 234.5 10.5C232.291 10.5 230.5 12.2909 230.5 14.5C230.5 16.7091 232.291 18.5 234.5 18.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M4.5 34.5L94.5 4.5" stroke="#D10D11" />
+                            <path d="M94.5 4.5L174.5 64.5" stroke="#D10D11" />
+                            <path d="M174.5 64.5L234.5 14.5" stroke="#D10D11" />
+                        </svg>
+                    </div>
+                    <div class="article__wrapper">
+                        <a href="#" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article__img.png" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </div>
+                        </a>
+                        <div class="article__small">
+                            <a href="#" class="article__big-content article__small-item">
+                                <img class="mob" src="assets/image/article__img.png" alt="article">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </a>
+                            <a href="#" class="article__big-content article__small-item">
+                                <img class="mob" src="assets/image/article__img.png" alt="article">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </a>
+                            <a href="#" class="article__big-content article__small-item">
+                                <img class="mob" src="assets/image/article__img.png" alt="article">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="main__button main__button-red article__button"><span>All articles</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <svg class="footer__back" width="1072" height="614" viewBox="0 0 1072 614" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_133)">
+                <path d="M8 162.207H1955.22" stroke="url(#paint0_linear_2001_133)" />
+                <path d="M8 324.414H1955.22" stroke="url(#paint1_linear_2001_133)" />
+                <path d="M8 486.621H1955.22" stroke="url(#paint2_linear_2001_133)" />
+                <path d="M332.536 0V648.828" stroke="url(#paint3_linear_2001_133)" />
+                <path d="M657.072 0V648.828" stroke="url(#paint4_linear_2001_133)" />
+                <path d="M981.608 0V648.828" stroke="url(#paint5_linear_2001_133)" />
+            </g>
+            <defs>
+                <linearGradient id="paint0_linear_2001_133" x1="981.608" y1="162.207" x2="981.608" y2="163.207" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2001_133" x1="981.608" y1="324.414" x2="981.608" y2="325.414" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.53" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_2001_133" x1="981.608" y1="486.621" x2="981.608" y2="487.621" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_2001_133" x1="333.036" y1="0" x2="333.036" y2="648.828" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint4_linear_2001_133" x1="657.572" y1="0" x2="657.572" y2="648.828" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint5_linear_2001_133" x1="982.108" y1="0" x2="982.108" y2="648.828" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <clipPath id="clip0_2001_133">
+                <rect width="1072" height="614" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__top">
+                    <div class="footer__logo decs"><img src="assets/image/footer-logo.png" alt=""></div>
+                    <nav class="footer__menu">
+                        <ul class="footer__ul decs">
+                            <li><h3 class="subtitle">Services</h3></li>
+                            <li><a href="#" class="footer__ul-text">Vehicle Diagnostics</a></li>
+                            <li><a href="#" class="footer__ul-text">EV & Hybrid Repair</a></li>
+                            <li><a href="#" class="footer__ul-text">Auto Electrical</a></li>
+                            <li><a href="#" class="footer__ul-text">Scheduled Maintenance</a></li>
+                            <li><a href="#" class="footer__ul-text">Comprehensive Repairs</a></li>
+                            <li><a href="#" class="footer__ul-text">Pre-Purchase Inspection</a></li>
+                        </ul>
+                        <ul class="footer__ul decs">
+                            <li><h3 class="subtitle">Company</h3></li>
+                            <li><a href="#" class="footer__ul-text">About Us</a></li>
+                            <li><a href="#" class="footer__ul-text">Blog</a></li>
+                            <li><a href="#" class="footer__ul-text">Insurance Partners</a></li>
+                            <li><a href="#" class="footer__ul-text">Fleet Services</a></li>
+                            <li><a href="#" class="footer__ul-text">Contact</a></li>
+                            <li><a href="#" class="footer__ul-text">Privacy Policy</a></li>
+                        </ul>
+                        <ul class="footer__ul">
+                            <li class="footer__title-mob">
+                                <svg class="mob" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="3" cy="3" r="3" fill="#191818" />
+                                </svg>
+                                <h3 class="subtitle">Contact</h3>
+                            </li>
+                            <li class="footer__text-mob">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.05199 3.83632L5.86799 3.31496C6.63169 2.82696 7.63881 3.01559 8.22043 3.75558L9.3786 5.22987C9.88333 5.87167 9.9397 6.77088 9.51801 7.45235L8.34631 9.34854C8.67962 10.2061 9.21175 10.9954 9.94271 11.7165C10.6415 12.4162 11.475 12.9693 12.3938 13.3433L14.111 12.2144C14.7615 11.7876 15.6117 11.851 16.2206 12.3716L17.6388 13.5844C18.3477 14.19 18.5299 15.2376 18.0668 16.0358L17.5701 16.8914C17.0759 17.7427 16.1792 18.2444 15.2145 18.2072C12.9384 18.1201 10.4886 16.7077 7.86489 13.9699C5.23755 11.2273 3.88341 8.66616 3.80249 6.28663C3.76851 5.2855 4.24445 4.35278 5.05365 3.83588" fill="#D10D11" />
+                                </svg>
+                                <p class="footer__ul-text">Address</p>
+                            </li>
+                            <li><a href="#" class="footer__ul-text">Service Street 12 Helsinki, Finland</a></li>
+                            <li class="footer__text-mob">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5 2C6.0875 2 3 4.61822 3 8.66751C3 11.2532 4.99063 14.2942 8.96375 17.7988C9.2725 18.0671 9.73563 18.0671 10.0444 17.7988C14.0094 14.2942 16 11.2532 16 8.66751C16 4.61822 12.9125 2 9.5 2ZM9.5 10.1311C8.60625 10.1311 7.875 9.39931 7.875 8.50489C7.875 7.61047 8.60625 6.87867 9.5 6.87867C10.3938 6.87867 11.125 7.61047 11.125 8.50489C11.125 9.39931 10.3938 10.1311 9.5 10.1311Z" fill="#D10D11" />
+                                </svg>
+                                <p class="footer__ul-text">Phone</p>
+                            </li>
+                            <li><a href="tel:+358455555555" class="footer__ul-text">+358 45 555 5555</a></li>
+                            <li class="footer__text-mob">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.3 3H3.7C2.765 3 2.0085 3.73125 2.0085 4.625L2 14.375C2 15.2688 2.765 16 3.7 16H17.3C18.235 16 19 15.2688 19 14.375V4.625C19 3.73125 18.235 3 17.3 3ZM17.3 6.25L10.5 10.3125L3.7 6.25V4.625L10.5 8.6875L17.3 4.625V6.25Z" fill="#D10D11" />
+                                </svg>
+                                <p class="footer__ul-text">Email</p>
+                            </li>
+                            <li><a href="mainto:info@carbit.fi" class="footer__ul-text">info@carbit.fi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__middle">
+                    <p class="footer__middle-text decs">Expert diagnostics and repair for modern vehicles, including EV and hybrid systems. <br> Reliable service for private clients and business fleets.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-circle"></a>
+                        <a href="#" class="footer__social-circle"></a>
+                        <a href="#" class="footer__social-circle"></a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a href="#">© СarBit | Политика конфиденциальности</a>
+                </div>
+                <div class="footer__logo mob"><img src="assets/image/footer-logo-mob.png" alt=""></div>
+            </div>
+        </div>
+        <svg class="footer__bottom-line decs" width="1920" height="114" viewBox="0 0 1920 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1920 14.3791C1560 -35.4315 1320 64.1896 960 14.379C600 -35.4316 360 64.1895 -0.000123327 14.3789L-0.000132037 114L1920 114L1920 14.3791Z" fill="#D10D11" />
+        </svg>
+        <svg class="footer__bottom-line decs" width="1920" height="84" viewBox="0 0 1920 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1920 10.5951C1560 -26.1075 1320 47.2976 960 10.595C600 -26.1075 360 47.2975 -0.000122997 10.5949L-0.000129414 84L1920 84.0002L1920 10.5951Z" fill="#191818" />
+        </svg>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
