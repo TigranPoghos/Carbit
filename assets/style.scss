@@ -660,7 +660,7 @@ body {
         align-items: center;
         gap: 18px;
 
-        & h1 {
+        & h2 {
             flex-shrink: 0;
         }
 
@@ -848,7 +848,7 @@ body {
         justify-content: center;
         overflow: hidden;
 
-        & h1 {
+        & h2 {
             flex-shrink: 0;
             font-family: var(--third-family);
             font-weight: 600;
@@ -1189,7 +1189,7 @@ body {
         }
 
         &__title {
-            & h1 {
+            & h2 {
                 font-size: 40px;
             }
         }
@@ -1352,7 +1352,7 @@ body {
 
     .work {
         &__title {
-            & h1 {
+            & h2 {
                 flex-shrink: inherit;
             }
         }
@@ -1410,7 +1410,7 @@ body {
 
     .article {
         &__title {
-            & h1 {
+            & h2 {
                 flex-shrink: inherit;
             }
         }

@@ -588,7 +588,7 @@ body.hidden {
   align-items: center;
   gap: 18px;
 }
-.work__title h1 {
+.work__title h2 {
   flex-shrink: 0;
 }
 .work__title-svg-right {
@@ -748,7 +748,7 @@ body.hidden {
   justify-content: center;
   overflow: hidden;
 }
-.article__title h1 {
+.article__title h2 {
   flex-shrink: 0;
   font-family: var(--third-family);
   font-weight: 600;
@@ -1013,7 +1013,7 @@ body.hidden {
   .article__row {
     gap: 20px;
   }
-  .article__title h1 {
+  .article__title h2 {
     font-size: 40px;
   }
   .article__big-content {
@@ -1126,7 +1126,7 @@ body.hidden {
   .service__link {
     margin: 20px auto 0 auto;
   }
-  .work__title h1 {
+  .work__title h2 {
     flex-shrink: inherit;
   }
   .sert {
@@ -1168,7 +1168,7 @@ body.hidden {
   .plus__item {
     width: calc(50% - 5px);
   }
-  .article__title h1 {
+  .article__title h2 {
     flex-shrink: inherit;
   }
   .article__small {
