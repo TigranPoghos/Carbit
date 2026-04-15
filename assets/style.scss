@@ -277,6 +277,39 @@ body {
             background: url('../image/input-before.png') no-repeat center;
             pointer-events: none;
         }
+
+        &-block {
+            position: absolute;
+            top: calc(100% + 22px);
+            left: 0;
+            border: 1px solid rgba(209, 13, 17, 1);
+            border-radius: 20px;
+            padding: 16px;
+            background: rgba(25, 24, 24, .9);
+            width: 100%;
+            min-height: 100px;
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &-result {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            & li a {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 131%;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: var(--white-1);
+            }
+        }
     }
 
     &__social {
