@@ -941,7 +941,7 @@ body {
 }
 
 .burger {
-    position: absolute;
+    position: fixed;
     top: calc(100% + 5px);
     border: 1px solid var(--red);
     border-radius: 10px;
