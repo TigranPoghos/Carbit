@@ -289,6 +289,34 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+    //вопрос-ответ
+    const faqWrapper = document.querySelector('.faq__wrapper');
+    if (!faqWrapper) return;
+    const faqItems = faqWrapper.querySelectorAll('.faq__item');
+    if (!faqItems.length) return;
+    faqItems.forEach((item) => {
+        const subtitle = item.querySelector('.faq__subtitle');
+        if (!subtitle) return;
+        item.addEventListener('click', (e) => {
+            if (e.target.closest('a, button')) return;
+
+            const isActive = item.classList.contains('active');
+            faqItems.forEach((el) => {
+                el.classList.remove('active');
+
+                const sub = el.querySelector('.faq__subtitle');
+                if (sub) sub.classList.remove('active');
+            });
+            if (!isActive) {
+                item.classList.add('active');
+                subtitle.classList.add('active');
+            }
+        });
+    });
+
+
+
+
 
 
 
