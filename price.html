@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row row">
+                <div class="header__logo">
+                    <a href="#"><img src="assets/image/logo.png" alt=""></a>
+                </div>
+                <div class="header__search decs">
+                    <input type="text" placeholder="search">
+                    <div class="header__search-block">
+                        <ul class="header__search-result">
+                            <li><a href="#">Auto electrics</a></li>
+                            <li><a href="#">Scheduled maintenance</a></li>
+                            <li><a href="#">Vehicle diagnostics</a></li>
+                            <li><a href="#">EV & Hybrid Repair</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__social decs">
+                    <a href="#">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.9876 6.95607C25.6886 5.64439 24.1416 4.60436 22.4366 3.89659C20.7316 3.18881 18.9028 2.82746 17.0568 2.83357C9.3218 2.83357 3.01763 9.13774 3.01763 16.8727C3.01763 19.3519 3.6693 21.7602 4.88763 23.8852L2.9043 31.1669L10.3418 29.2119C12.396 30.3311 14.7051 30.9261 17.0568 30.9261C24.7918 30.9261 31.096 24.6219 31.096 16.8869C31.096 13.1327 29.6368 9.60524 26.9876 6.95607ZM17.0568 28.5461C14.9601 28.5461 12.906 27.9794 11.1068 26.9169L10.6818 26.6619L6.2618 27.8236L7.43763 23.5169L7.1543 23.0777C5.98916 21.2177 5.37061 19.0675 5.3693 16.8727C5.3693 10.4411 10.611 5.19941 17.0426 5.19941C20.1593 5.19941 23.0918 6.41774 25.2876 8.62774C26.3751 9.70988 27.2368 10.9972 27.8229 12.415C28.409 13.8327 28.7077 15.3528 28.7018 16.8869C28.7301 23.3186 23.4885 28.5461 17.0568 28.5461ZM23.4601 19.8194C23.106 19.6494 21.3776 18.7994 21.066 18.6719C20.7401 18.5586 20.5135 18.5019 20.2726 18.8419C20.0318 19.1961 19.366 19.9894 19.1676 20.2161C18.9693 20.4569 18.7568 20.4852 18.4026 20.3011C18.0485 20.1311 16.9151 19.7486 15.5835 18.5586C14.5351 17.6236 13.841 16.4761 13.6285 16.1219C13.4301 15.7677 13.6001 15.5836 13.7843 15.3994C13.9401 15.2436 14.1385 14.9886 14.3085 14.7902C14.4785 14.5919 14.5493 14.4361 14.6626 14.2094C14.776 13.9686 14.7193 13.7702 14.6343 13.6002C14.5493 13.4302 13.841 11.7019 13.5576 10.9936C13.2743 10.3136 12.9768 10.3986 12.7643 10.3844H12.0843C11.8435 10.3844 11.4751 10.4694 11.1493 10.8236C10.8376 11.1777 9.93096 12.0277 9.93096 13.7561C9.93096 15.4844 11.1918 17.1561 11.3618 17.3827C11.5318 17.6236 13.841 21.1652 17.3543 22.6811C18.1901 23.0494 18.8418 23.2619 19.3518 23.4177C20.1876 23.6869 20.9526 23.6444 21.5618 23.5594C22.2418 23.4602 23.6443 22.7094 23.9276 21.8877C24.2251 21.0661 24.2251 20.3719 24.126 20.2161C24.0268 20.0602 23.8143 19.9894 23.4601 19.8194Z" fill="#D10D11" />
+                        </svg>
+                    </a>
+                </div>
+                <button type="button" class="header__button decs"><span>Book an appointment</span></button>
+                <div class="header__lang decs">
+                    <a href="#" class="header__lang-item active">
+                        <span class="header__lang-text">Fi</span>
+                        <span class="header__lang-line">
+                            <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="header__lang-item">
+                        <span class="header__lang-text">En</span>
+                        <span class="header__lang-line">
+                            <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <button class="header__burger">
+                    <svg class="header__burger-icon header__burger-icon--menu" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.875 23.375H26.125M6.875 16.5H26.125M6.875 9.625H17.875" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="header__burger-icon header__burger-icon--close" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5 17.5L10.25 9.25002M10.25 9.25002L2 1M10.25 9.25002L18.5 1M10.25 9.25002L2 17.5" stroke="#D10D11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="burger decs">
+                    <ul class="burger__menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our service</a></li>
+                        <li><a href="#">price</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    <button type="button" class="burger__button"><span>Free consultation</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="burger">
+            <div class="burger__top">
+                <div class="header__search">
+                    <input type="text" placeholder="search">
+                    <div class="header__search-block">
+                        <ul class="header__search-result">
+                            <li><a href="#">Auto electrics</a></li>
+                            <li><a href="#">Scheduled maintenance</a></li>
+                            <li><a href="#">Vehicle diagnostics</a></li>
+                            <li><a href="#">EV & Hybrid Repair</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger__close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3244 17.3234L11.5499 11.5489M11.5499 11.5489L5.77539 5.77441M11.5499 11.5489L17.3244 5.77441M11.5499 11.5489L5.77539 17.3235" stroke="#D10D11" stroke-width="1.4902" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+            <ul class="burger__menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our service</a></li>
+                <li><a href="#">price</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <button type="button" class="burger__button"><span>Free consultation</span></button>
+            <div class="header__lang">
+                <a href="#" class="header__lang-item active">
+                    <span class="header__lang-text">Fi</span>
+                    <span class="header__lang-line">
+                        <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="header__lang-item">
+                    <span class="header__lang-text">En</span>
+                    <span class="header__lang-line">
+                        <svg width="21" height="2" viewBox="0 0 21 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L20 1" stroke="#D10D11" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="burger__contact">
+                <a href="mainto:info@carbit.fi">info@carbit.fi</a>
+                <div class="burger__contact-line"></div>
+                <a href="tel:+358449864688">+358 44 986 4688</a>
+            </div>
+            <div class="burger__social">
+                <a href="#" class="burger__social-circle"></a>
+                <a href="#" class="burger__social-circle"></a>
+                <a href="#" class="burger__social-circle"></a>
+            </div>
+        </div>
+        <div class="opacite"></div>
+        <section class="price">
+            <div class="container">
+                <div class="price__row row">
+                    <h1 class="price__title title">Carbit service price</h1>
+                    <p class="price__subtitle">Transparent prices with no hidden fees — you pay only for the quality you can see right away.</p>
+                    <div class="price__container">
+                        <div class="price__tabs">
+                            <button class="price__tabs-btn active" data-type="sedan">Sedan</button>
+                            <button class="price__tabs-btn" data-type="wagon">Farmer Wagon</button>
+                            <button class="price__tabs-btn" data-type="van">Van</button>
+                            <button class="price__tabs-btn" data-type="suv">SUV/Jeep</button>
+                        </div>
+                        <div class="price__bottom">
+                            <div class="price__aside active" data-type="sedan">
+                                <button data-table="packages" class="price__aside-button active">
+                                    <span>Packages</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="exterior" class="price__aside-button">
+                                    <span>Exterior wash</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="waxing" class="price__aside-button">
+                                    <span>Waxing</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="interior" class="price__aside-button">
+                                    <span>Interior cleaning</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="ceramic" class="price__aside-button">
+                                    <span>Ceramic Coating</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="tires" class="price__aside-button">
+                                    <span>Tires and Wheels</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="repair" class="price__aside-button">
+                                    <span>Repair Services</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="paint" class="price__aside-button">
+                                    <span>Car Wrapping and Paint</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="other" class="price__aside-button">
+                                    <span>Other services</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="price__aside" data-type="wagon">
+                                <button data-table="packages" class="price__aside-button active">
+                                    <span>Packages</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="exterior" class="price__aside-button">
+                                    <span>Exterior wash</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="price__aside" data-type="van">
+                                <button data-table="packages" class="price__aside-button active">
+                                    <span>Packages</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="exterior" class="price__aside-button">
+                                    <span>Exterior wash</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="price__aside" data-type="suv">
+                                <button data-table="packages" class="price__aside-button active">
+                                    <span>Packages</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                                <button data-table="exterior" class="price__aside-button">
+                                    <span>Exterior wash</span>
+                                    <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72168 13.2221L4.34415 19L3 17.5558L7.70546 12.5L3 7.44422L4.34415 6L9.72168 11.7779C9.89989 11.9694 10 12.2292 10 12.5C10 12.7708 9.89989 13.0306 9.72168 13.2221Z" fill="#057575"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="price__content">
+                                <table data-table="packages" class="price__content-table active">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                            <th class="price__content-title">Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <p>Full car detailing</p>
+                                                <span>Includes exterior wash, engine wash (own responsibility), rubber mat cleaning, interior cleaning, vacuuming of footwells, upholstery (doors) and seat cleaning, polishing, hand waxing, and window cleaning.</span>
+                                            </td>
+                                            <td class="price__content-text">250 €</td>
+                                            <td class="price__content-text">5 h</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <p>Basic car detailing</p>
+                                                <span>Includes exterior wash, engine wash (own responsibility), rubber mat cleaning, interior cleaning, vacuuming of footwells, polishing, hand waxing, and window cleaning.</span>
+                                            </td>
+                                            <td class="price__content-text">170 €</td>
+                                            <td class="price__content-text">3 h</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="exterior" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                            <th class="price__content-title">Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <p>Exterior wash</p>
+                                                <span>Includes hand wash, drying + wiping off water marks, cleaning of wheels, door gaps, and rubber mats.</span>
+                                            </td>
+                                            <td class="price__content-text">20 €</td>
+                                            <td class="price__content-text">20 min</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="waxing" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                            <th class="price__content-title">Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Hand waxing (3-month guarantee)</span>
+                                            </td>
+                                            <td class="price__content-text">75 €</td>
+                                            <td class="price__content-text">1 h</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Hard waxing + polishing (6-month guarantee)</span>
+                                            </td>
+                                            <td class="price__content-text">140 €</td>
+                                            <td class="price__content-text">3 h</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="interior" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                            <th class="price__content-title">Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <p>Interior cleaning</p>
+                                                <span>Includes (exterior wash), vacuuming of floor, trunk, and upholstery, as well as wiping of windows and interior surfaces.</span>
+                                            </td>
+                                            <td class="price__content-text">75 €</td>
+                                            <td class="price__content-text">1 h 30 min</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <p>Deep Interior cleaning</p>
+                                                <span>Includes exterior wash and interior cleaning, as well as chemical cleaning of seats and air freshener.</span>
+                                            </td>
+                                            <td class="price__content-text">135 €</td>
+                                            <td class="price__content-text">5 h + drying</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="ceramic" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                            <th class="price__content-title">Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Ceramic Coating Krytex (1-2 years 15000KM)</span>
+                                            </td>
+                                            <td class="price__content-text">495 €</td>
+                                            <td class="price__content-text">24 h</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Ceramic Coating  Krytex (3-5 years – 45000KM)</span>
+                                            </td>
+                                            <td class="price__content-text">650 €</td>
+                                            <td class="price__content-text">24 h</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Glass Coating for windshield</span>
+                                            </td>
+                                            <td class="price__content-text">349 €</td>
+                                            <td class="price__content-text">24 h</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Ceramic Coating for leather interior</span>
+                                            </td>
+                                            <td class="price__content-text">149 €</td>
+                                            <td class="price__content-text">24 h</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Glass Coating for all windows</span>
+                                            </td>
+                                            <td class="price__content-text">249 €</td>
+                                            <td class="price__content-text">24 h</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Paint surface polishing/polishing</span>
+                                            </td>
+                                            <td class="price__content-text">from 130 €</td>
+                                            <td class="price__content-text">-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="tires" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Tire change</span>
+                                            </td>
+                                            <td class="price__content-text">25 €</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Tire cleaning (4 pieces)</span>
+                                            </td>
+                                            <td class="price__content-text">15 €</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Tire installation 4 pieces + balancing (Incl. rim work)</span>
+                                            </td>
+                                            <td class="price__content-text">from 75 €</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Tire installation 4 pieces + balancing (Excl. rim work)</span>
+                                            </td>
+                                            <td class="price__content-text">39 €</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="repair" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Spot painting (Dr. ColorChip is the simplest and most durable way to repair small paint damages caused by stones)</span>
+                                            </td>
+                                            <td class="price__content-text">from 55 €</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Dent repair (PDR technique)</span>
+                                            </td>
+                                            <td class="price__content-text">from 35 €</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Leather painting (Colourlock) for vehicle parts, e.g. for the seat, dashboard, doors and steering wheel </span>
+                                            </td>
+                                            <td class="price__content-text">from 55 €</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Leather painting (Colourlock) for other objects, e.g. for bags, furniture and footwear (Incl. repair and painting)</span>
+                                            </td>
+                                            <td class="price__content-text">from 55 €</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="paint" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Chrome wrapping</span>
+                                            </td>
+                                            <td class="price__content-text">Request quote!</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Window tinting</span>
+                                            </td>
+                                            <td class="price__content-text">from 189 €</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table data-table="other" class="price__content-table">
+                                    <thead class="price__content-head">
+                                        <tr class="price__content-row">
+                                            <th style="text-align: left;" class="price__content-title">Service</th>
+                                            <th class="price__content-title">Price</th>
+                                            <th class="price__content-title">Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="price__content-body">
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Engine wash</span>
+                                            </td>
+                                            <td class="price__content-text">21 €</td>
+                                            <td class="price__content-text">15 min</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Pet hair removal</span>
+                                            </td>
+                                            <td class="price__content-text">from 35 €</td>
+                                            <td class="price__content-text">-</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Adhesive removal</span>
+                                            </td>
+                                            <td class="price__content-text">from 75 €</td>
+                                            <td class="price__content-text">-</td>
+                                        </tr>
+                                        <tr class="price__content-row">
+                                            <td class="price__content-text">
+                                                <span>Ozonation (odor removal)</span>
+                                            </td>
+                                            <td class="price__content-text">from 21 €</td>
+                                            <td class="price__content-text">-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="price__buttons">
+                            <button class="main__button main__button-red" data-popup="book"><span>Book an appointment</span></button>
+                            <button class="main__button main__button-white" data-popup="consultation"><span>Free consultation</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="serv">
+            <svg class="service__svg" width="1205" height="1030" viewBox="0 0 1205 1030" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_369_1761)">
+                    <path d="M602.5 1144.75C901.976 1144.75 1144.75 901.976 1144.75 602.5C1144.75 303.024 901.976 60.25 602.5 60.25C303.024 60.25 60.25 303.024 60.25 602.5C60.25 901.976 303.024 1144.75 602.5 1144.75Z" stroke="#EA580C" stroke-opacity="0.1" stroke-width="2" />
+                    <path d="M602.5 964C802.151 964 964 802.151 964 602.5C964 402.849 802.151 241 602.5 241C402.849 241 241 402.849 241 602.5C241 802.151 402.849 964 602.5 964Z" stroke="#EA580C" stroke-opacity="0.1" stroke-width="2" />
+                    <path d="M602.5 783.25C702.325 783.25 783.25 702.325 783.25 602.5C783.25 502.675 702.325 421.75 602.5 421.75C502.675 421.75 421.75 502.675 421.75 602.5C421.75 702.325 502.675 783.25 602.5 783.25Z" stroke="#EA580C" stroke-opacity="0.1" stroke-width="2" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_369_1761">
+                    <rect width="1205" height="1030" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <div class="container">
+                <div class="serv__row row">
+                    <h2 class="title">Car service you can trust</h2>
+                    <p class="serv__subtitle">Professional car maintenance and repairs in Helsinki. We combine technical expertise with high standards to ensure your car performs at its best.</p>
+                    <p class="serv__subtitle">See what we can do for your vehicle.</p>
+                    <div class="work__bottom">
+                        <div class="work__item" >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <p>Wheel bearing replacement</p>
+                            <p>Smooth driving and improved safety</p>
+                        </div>
+                        <div class="work__item" >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <p>Wheel bearing replacement</p>
+                            <p>Smooth driving and improved safety</p>
+                        </div>
+                        <div class="work__item" >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <p>Wheel bearing replacement</p>
+                            <p>Smooth driving and improved safety</p>
+                        </div>
+                        <div class="work__item" >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <p>Wheel bearing replacement</p>
+                            <p>Smooth driving and improved safety</p>
+                        </div>
+                        <div class="work__item" >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <p>Wheel bearing replacement</p>
+                            <p>Smooth driving and improved safety</p>
+                        </div>
+                        <div class="work__item" >
+                            <img src="assets/image/work__item.jpg" alt="">
+                            <p>Wheel bearing replacement</p>
+                            <p>Smooth driving and improved safety</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sert sert__price">
+            <div class="container">
+                <div class="sert__row row">
+                    <div class="sert__top">
+                        <div class="sert__img"><img src="assets/image/sertificate.png" alt=""></div>
+                        <div class="sert__content">
+                            <h2 class="title">Carbit — Your trusted partner in modern vehicle service</h2>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                            <div class="sert__subtitle">
+                                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 1.5L6.16705 12.5L1.5 7" stroke="#D10D11" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>Experienced technicians</p>
+                            </div>
+                            <p class="sert__text">Skilled professionals working with all types of vehicles every day</p>
+                        </div>
+                    </div>
+                    <div class="sert__bottom">
+                        <a href="#" class="main__button main__button-white"><span>All service</span></a>
+                        <button type="button" class="main__button main__button-red"><span>Book an appointnen</span></button>
+                    </div>
+                </div>
+            </div>
+            <img class="sert__back" src="assets/image/sert-back.png" alt="">
+        </section>
+        <section class="article">
+            <div class="container">
+                <div class="article__row row">
+                    <div class="article__title">
+                        <svg class="article__title-left" width="239" height="69" viewBox="0 0 239 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 38.5C6.70914 38.5 8.5 36.7091 8.5 34.5C8.5 32.2909 6.70914 30.5 4.5 30.5C2.29086 30.5 0.5 32.2909 0.5 34.5C0.5 36.7091 2.29086 38.5 4.5 38.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M94.5 8.5C96.7091 8.5 98.5 6.70914 98.5 4.5C98.5 2.29086 96.7091 0.5 94.5 0.5C92.2909 0.5 90.5 2.29086 90.5 4.5C90.5 6.70914 92.2909 8.5 94.5 8.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M174.5 68.5C176.709 68.5 178.5 66.7091 178.5 64.5C178.5 62.2909 176.709 60.5 174.5 60.5C172.291 60.5 170.5 62.2909 170.5 64.5C170.5 66.7091 172.291 68.5 174.5 68.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M234.5 18.5C236.709 18.5 238.5 16.7091 238.5 14.5C238.5 12.2909 236.709 10.5 234.5 10.5C232.291 10.5 230.5 12.2909 230.5 14.5C230.5 16.7091 232.291 18.5 234.5 18.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M4.5 34.5L94.5 4.5" stroke="#D10D11" />
+                            <path d="M94.5 4.5L174.5 64.5" stroke="#D10D11" />
+                            <path d="M174.5 64.5L234.5 14.5" stroke="#D10D11" />
+                        </svg>
+                        <h2>Discover helpful articles here</h2>
+                        <svg class="article__title-right" width="239" height="69" viewBox="0 0 239 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 38.5C6.70914 38.5 8.5 36.7091 8.5 34.5C8.5 32.2909 6.70914 30.5 4.5 30.5C2.29086 30.5 0.5 32.2909 0.5 34.5C0.5 36.7091 2.29086 38.5 4.5 38.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M94.5 8.5C96.7091 8.5 98.5 6.70914 98.5 4.5C98.5 2.29086 96.7091 0.5 94.5 0.5C92.2909 0.5 90.5 2.29086 90.5 4.5C90.5 6.70914 92.2909 8.5 94.5 8.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M174.5 68.5C176.709 68.5 178.5 66.7091 178.5 64.5C178.5 62.2909 176.709 60.5 174.5 60.5C172.291 60.5 170.5 62.2909 170.5 64.5C170.5 66.7091 172.291 68.5 174.5 68.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M234.5 18.5C236.709 18.5 238.5 16.7091 238.5 14.5C238.5 12.2909 236.709 10.5 234.5 10.5C232.291 10.5 230.5 12.2909 230.5 14.5C230.5 16.7091 232.291 18.5 234.5 18.5Z" fill="#D10D11" stroke="#D10D11" />
+                            <path d="M4.5 34.5L94.5 4.5" stroke="#D10D11" />
+                            <path d="M94.5 4.5L174.5 64.5" stroke="#D10D11" />
+                            <path d="M174.5 64.5L234.5 14.5" stroke="#D10D11" />
+                        </svg>
+                    </div>
+                    <div class="article__wrapper">
+                        <a href="#" class="article__big">
+                            <div class="article__big-img">
+                                <img src="assets/image/article__img.png" alt="article">
+                            </div>
+                            <div class="article__big-content">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </div>
+                        </a>
+                        <div class="article__small">
+                            <a href="#" class="article__big-content article__small-item">
+                                <img class="mob" src="assets/image/article__img.png" alt="article">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </a>
+                            <a href="#" class="article__big-content article__small-item">
+                                <img class="mob" src="assets/image/article__img.png" alt="article">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </a>
+                            <a href="#" class="article__big-content article__small-item">
+                                <img class="mob" src="assets/image/article__img.png" alt="article">
+                                <h3 class="subtitle">The Ultimate Guide to Car Taping</h3>
+                                <p class="text">Car taping, also known as car wrapping, is a revolutionary way to transform your vehicle’s appearance without the permanence of paint. NanoMeikki, a leading expert in car wrapping services...</p>
+                                <p class="text">Read more</p>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="main__button main__button-red article__button"><span>All articles</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <svg class="footer__back" width="1072" height="614" viewBox="0 0 1072 614" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2001_133)">
+                <path d="M8 162.207H1955.22" stroke="url(#paint0_linear_2001_133)" />
+                <path d="M8 324.414H1955.22" stroke="url(#paint1_linear_2001_133)" />
+                <path d="M8 486.621H1955.22" stroke="url(#paint2_linear_2001_133)" />
+                <path d="M332.536 0V648.828" stroke="url(#paint3_linear_2001_133)" />
+                <path d="M657.072 0V648.828" stroke="url(#paint4_linear_2001_133)" />
+                <path d="M981.608 0V648.828" stroke="url(#paint5_linear_2001_133)" />
+            </g>
+            <defs>
+                <linearGradient id="paint0_linear_2001_133" x1="981.608" y1="162.207" x2="981.608" y2="163.207" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_2001_133" x1="981.608" y1="324.414" x2="981.608" y2="325.414" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.53" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_2001_133" x1="981.608" y1="486.621" x2="981.608" y2="487.621" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_2001_133" x1="333.036" y1="0" x2="333.036" y2="648.828" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint4_linear_2001_133" x1="657.572" y1="0" x2="657.572" y2="648.828" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <linearGradient id="paint5_linear_2001_133" x1="982.108" y1="0" x2="982.108" y2="648.828" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D10D11" stop-opacity="0.07" />
+                <stop offset="0.5" stop-color="#9E0A0D" stop-opacity="0.38" />
+                <stop offset="1" stop-color="#6B0709" stop-opacity="0.71" />
+                </linearGradient>
+                <clipPath id="clip0_2001_133">
+                <rect width="1072" height="614" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__top">
+                    <div class="footer__logo decs"><img src="assets/image/footer-logo.png" alt=""></div>
+                    <nav class="footer__menu">
+                        <ul class="footer__ul decs">
+                            <li><h3 class="subtitle">Services</h3></li>
+                            <li><a href="#" class="footer__ul-text">Vehicle Diagnostics</a></li>
+                            <li><a href="#" class="footer__ul-text">EV & Hybrid Repair</a></li>
+                            <li><a href="#" class="footer__ul-text">Auto Electrical</a></li>
+                            <li><a href="#" class="footer__ul-text">Scheduled Maintenance</a></li>
+                            <li><a href="#" class="footer__ul-text">Comprehensive Repairs</a></li>
+                            <li><a href="#" class="footer__ul-text">Pre-Purchase Inspection</a></li>
+                        </ul>
+                        <ul class="footer__ul decs">
+                            <li><h3 class="subtitle">Company</h3></li>
+                            <li><a href="#" class="footer__ul-text">About Us</a></li>
+                            <li><a href="#" class="footer__ul-text">Blog</a></li>
+                            <li><a href="#" class="footer__ul-text">Insurance Partners</a></li>
+                            <li><a href="#" class="footer__ul-text">Fleet Services</a></li>
+                            <li><a href="#" class="footer__ul-text">Contact</a></li>
+                            <li><a href="#" class="footer__ul-text">Privacy Policy</a></li>
+                        </ul>
+                        <ul class="footer__ul">
+                            <li class="footer__title-mob">
+                                <svg class="mob" width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="3" cy="3" r="3" fill="#191818" />
+                                </svg>
+                                <h3 class="subtitle">Contact</h3>
+                            </li>
+                            <li class="footer__text-mob">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.05199 3.83632L5.86799 3.31496C6.63169 2.82696 7.63881 3.01559 8.22043 3.75558L9.3786 5.22987C9.88333 5.87167 9.9397 6.77088 9.51801 7.45235L8.34631 9.34854C8.67962 10.2061 9.21175 10.9954 9.94271 11.7165C10.6415 12.4162 11.475 12.9693 12.3938 13.3433L14.111 12.2144C14.7615 11.7876 15.6117 11.851 16.2206 12.3716L17.6388 13.5844C18.3477 14.19 18.5299 15.2376 18.0668 16.0358L17.5701 16.8914C17.0759 17.7427 16.1792 18.2444 15.2145 18.2072C12.9384 18.1201 10.4886 16.7077 7.86489 13.9699C5.23755 11.2273 3.88341 8.66616 3.80249 6.28663C3.76851 5.2855 4.24445 4.35278 5.05365 3.83588" fill="#D10D11" />
+                                </svg>
+                                <p class="footer__ul-text">Address</p>
+                            </li>
+                            <li><a href="#" class="footer__ul-text">Service Street 12 Helsinki, Finland</a></li>
+                            <li class="footer__text-mob">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.5 2C6.0875 2 3 4.61822 3 8.66751C3 11.2532 4.99063 14.2942 8.96375 17.7988C9.2725 18.0671 9.73563 18.0671 10.0444 17.7988C14.0094 14.2942 16 11.2532 16 8.66751C16 4.61822 12.9125 2 9.5 2ZM9.5 10.1311C8.60625 10.1311 7.875 9.39931 7.875 8.50489C7.875 7.61047 8.60625 6.87867 9.5 6.87867C10.3938 6.87867 11.125 7.61047 11.125 8.50489C11.125 9.39931 10.3938 10.1311 9.5 10.1311Z" fill="#D10D11" />
+                                </svg>
+                                <p class="footer__ul-text">Phone</p>
+                            </li>
+                            <li><a href="tel:+358455555555" class="footer__ul-text">+358 45 555 5555</a></li>
+                            <li class="footer__text-mob">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.3 3H3.7C2.765 3 2.0085 3.73125 2.0085 4.625L2 14.375C2 15.2688 2.765 16 3.7 16H17.3C18.235 16 19 15.2688 19 14.375V4.625C19 3.73125 18.235 3 17.3 3ZM17.3 6.25L10.5 10.3125L3.7 6.25V4.625L10.5 8.6875L17.3 4.625V6.25Z" fill="#D10D11" />
+                                </svg>
+                                <p class="footer__ul-text">Email</p>
+                            </li>
+                            <li><a href="mainto:info@carbit.fi" class="footer__ul-text">info@carbit.fi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__middle">
+                    <p class="footer__middle-text decs">Expert diagnostics and repair for modern vehicles, including EV and hybrid systems. <br> Reliable service for private clients and business fleets.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-circle"></a>
+                        <a href="#" class="footer__social-circle"></a>
+                        <a href="#" class="footer__social-circle"></a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a href="#">© СarBit | Политика конфиденциальности</a>
+                </div>
+                <div class="footer__logo mob"><img src="assets/image/footer-logo-mob.png" alt=""></div>
+            </div>
+        </div>
+        <svg class="footer__bottom-line decs" width="1920" height="114" viewBox="0 0 1920 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1920 14.3791C1560 -35.4315 1320 64.1896 960 14.379C600 -35.4316 360 64.1895 -0.000123327 14.3789L-0.000132037 114L1920 114L1920 14.3791Z" fill="#D10D11" />
+        </svg>
+        <svg class="footer__bottom-line decs" width="1920" height="84" viewBox="0 0 1920 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1920 10.5951C1560 -26.1075 1320 47.2976 960 10.595C600 -26.1075 360 47.2975 -0.000122997 10.5949L-0.000129414 84L1920 84.0002L1920 10.5951Z" fill="#191818" />
+        </svg>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

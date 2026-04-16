@@ -154,4 +154,142 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
+    //цены
+    const tabs = document.querySelectorAll('.price__tabs-btn');
+    const asides = document.querySelectorAll('.price__aside');
+    const tables = document.querySelectorAll('.price__content-table');
+    function isMobile() {
+    return window.innerWidth <= 768;
+    }
+    function initPricing() {
+    const firstTab = tabs[0];
+    const type = firstTab?.dataset.type;
+
+    tabs.forEach(t => t.classList.remove('active'));
+    firstTab?.classList.add('active');
+
+    asides.forEach(aside => {
+        aside.classList.toggle('active', aside.dataset.type === type);
+        const buttons = aside.querySelectorAll('.price__aside-button');
+
+        if (isMobile()) {
+        buttons.forEach(b => b.classList.remove('active'));
+        tables.forEach(table => table.classList.remove('active'));
+        } else {
+        buttons.forEach((b, i) => b.classList.toggle('active', i === 0));
+        const firstTableName = buttons[0]?.dataset.table;
+        tables.forEach(table => {
+            table.classList.toggle('active', table.dataset.table === firstTableName &&
+            table.closest('.price__bottom').querySelector(`.price__aside[data-type="${type}"]`)
+            );
+        });
+        }
+    });
+    }
+    tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const type = tab.dataset.type;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        asides.forEach(aside => {
+        aside.classList.toggle('active', aside.dataset.type === type);
+        const buttons = aside.querySelectorAll('.price__aside-button');
+
+        if (isMobile()) {
+            buttons.forEach(b => b.classList.remove('active'));
+            tables.forEach(table => table.classList.remove('active'));
+        } else {
+            buttons.forEach((b, i) => b.classList.toggle('active', i === 0));
+            const firstTableName = buttons[0]?.dataset.table;
+            tables.forEach(table => {
+            table.classList.toggle('active', table.dataset.table === firstTableName &&
+                table.closest('.price__bottom').querySelector(`.price__aside[data-type="${type}"]`)
+            );
+            });
+        }
+        });
+    });
+    });
+    asides.forEach(aside => {
+    const buttons = aside.querySelectorAll('.price__aside-button');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+        const tableName = btn.dataset.table;
+        const type = aside.dataset.type;
+
+        const relatedTables = Array.from(tables).filter(t => t.closest('.price__bottom').querySelector(`.price__aside[data-type="${type}"]`));
+        const table = relatedTables.find(t => t.dataset.table === tableName);
+
+        if (!table) return;
+
+        if (isMobile()) {
+            const isActive = btn.classList.contains('active');
+            btn.classList.toggle('active', !isActive);
+
+            if (!isActive) {
+            btn.insertAdjacentElement('afterend', table);
+            table.classList.add('active');
+            } else {
+            table.classList.remove('active');
+            }
+        } else {
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            relatedTables.forEach(t => t.classList.toggle('active', t.dataset.table === tableName));
+        }
+        });
+    });
+    });
+    window.addEventListener('load', initPricing);
+    window.addEventListener('resize', initPricing);
+
+
+
+
+
+
+
+
+    $.fn.setCursorPosition = function(pos) {
+        const el = $(this).get(0);
+        if (el.setSelectionRange) {
+            el.setSelectionRange(pos, pos);
+        } else if (el.createTextRange) {
+            const range = el.createTextRange();
+            range.collapse(true);
+            range.moveEnd('character', pos);
+            range.moveStart('character', pos);
+            range.select();
+        }
+        return this;
+    };
+
+    $('input[type="tel"]')
+    .mask('+358 (999) 999 99 99', { autoclear: false })
+    .on('click focus', function(e) {
+        const pos = this.selectionStart;
+
+        if (pos < 6) {
+            e.preventDefault();
+            $(this).setCursorPosition(5);
+        }
+    })
+    .on('keydown', function(e) {
+        const pos = this.selectionStart;
+
+        if (pos <= 6 && (e.key === 'Backspace' || e.key === 'Delete')) {
+            e.preventDefault();
+        }
+    });
+
+
+    
+
+
+
+
+
+
 })
