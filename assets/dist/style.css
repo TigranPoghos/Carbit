@@ -1741,6 +1741,10 @@ body.hidden {
   flex-direction: column;
   padding: 130px 0 50px 0;
 }
+.contact .container {
+  position: relative;
+  z-index: 1;
+}
 .contact__svg {
   position: absolute;
   top: 50px;

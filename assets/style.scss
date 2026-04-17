@@ -2016,6 +2016,11 @@ body {
         flex-direction: column;
         padding: 130px 0 50px 0;
     }
+
+    & .container {
+        position: relative;
+        z-index: 1;
+    }
     
     &__svg {
         position: absolute;
