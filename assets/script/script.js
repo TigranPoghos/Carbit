@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
     //Показать еще
-    const workBottom = document.querySelector('.blog__blog');
+    const workBottom = document.querySelector('.blog__blogs');
     const workMoreButton = document.querySelector('.buttonJS');
 
     if (workBottom && workMoreButton) {
