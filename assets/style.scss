@@ -307,6 +307,11 @@ body {
             border: 1px solid rgba(209, 13, 17, 0.45);
             border-radius: 20px;
 
+            &::placeholder {
+                color: var(--white-1);
+                opacity: .5;
+            }
+
             &:focus {
                 outline: none;
             }
@@ -492,7 +497,7 @@ body {
         & a {
             font-family: var(--font-family);
             font-weight: 400;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 110%;
             color: var(--white-2);
             opacity: .56;
@@ -521,6 +526,7 @@ body {
     &__button {
         border-radius: 10px;
         padding: 16px 20px;
+        transition: all 0.3s ease;
         max-width: max-content;
 
         & span {
@@ -571,7 +577,6 @@ body {
 
 .first {
     height: 90dvh;
-    background-image: url('..//image/first-back.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -718,10 +723,11 @@ body {
     &__wrapper {
         display: flex;
         gap: 16px;
+        padding-bottom: 50px;
     }
 
     &__link {
-        margin: 36px 0 0 auto;
+        margin: 0 0 0 auto;
         min-width: 200px;
         text-align: center;
     }
@@ -2829,6 +2835,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
             box-sizing: border-box;
 
             & svg {
@@ -2884,7 +2891,7 @@ body {
                 & span {
                     font-family: var(--font-family);
                     font-weight: 400;
-                    font-size: 10px;
+                    font-size: 14px;
                     line-height: 110%;
                     color: var(--red);
                 }
@@ -2995,6 +3002,8 @@ body {
 }
 
 .thanks {
+    min-height: 90dvh;
+
     &__row {
         flex-direction: column;
         align-items: center;
@@ -3477,6 +3486,8 @@ body {
     }
 
     .first {
+        background-position: left;
+
         & .container {
             height: 100%;
         }
@@ -3696,7 +3707,8 @@ body {
         z-index: 100000;
         top: 0;
         border-radius: 0 0 0 10px;
-        width: 360px;
+        width: 100%;
+        max-width: 500px;
 
         &__menu {
             gap: 5px;
