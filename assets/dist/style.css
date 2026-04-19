@@ -3493,6 +3493,10 @@ body.hidden {
   .plus__item {
     width: 100%;
   }
+  .popup__book .popup__form-group-half {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .buttonJS {
   display: none;

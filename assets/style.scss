@@ -4315,6 +4315,21 @@ body {
             width: 100%;
         }
     }
+
+    .popup {
+        &__book {
+            & .popup {
+                &__form {
+                    &-group {
+                        &-half {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .buttonJS {
