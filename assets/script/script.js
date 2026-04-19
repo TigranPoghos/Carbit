@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // переключение языка
     const langButtons = document.querySelectorAll('.header__lang-item');
-
     if (langButtons.length) {
         langButtons.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // слайдер сервисов
     let serviceSlider = null;
-
     function initServiceSlider() {
         const slider = document.querySelector('.service-swiper');
         if (!slider || typeof Swiper === 'undefined') return;
@@ -49,43 +47,55 @@ document.addEventListener('DOMContentLoaded', function () {
             serviceSlider = null;
         }
     }
-
     initServiceSlider();
     window.addEventListener('resize', initServiceSlider);
 
 
 
 
-    // поиск
-    const searches = document.querySelectorAll('.header__search');
-
+    // общие проверки состояний
     function isAnyBurgerOpen() {
         const burgers = document.querySelectorAll('.burger');
         return [...burgers].some(burger => burger.classList.contains('active'));
     }
+    function isAnyPopupOpen() {
+        return !!document.querySelector('.popup__consultation.active, .popup__book.active');
+    }
 
-    function closeAllSearches() {
-        if (!searches.length) return;
 
-        searches.forEach((search) => {
-            const input = search.querySelector('input');
+
+
+    // поиск
+    const searches = document.querySelectorAll('.header__search');
+    function isAnySearchOpen() {
+        if (!searches.length) return false;
+
+        return [...searches].some(search => {
             const dropdown = search.querySelector('.header__search-block');
-
-            if (dropdown) {
-                dropdown.classList.remove('active');
-            }
-
-            if (input) {
-                input.blur();
-            }
+            return dropdown && dropdown.classList.contains('active');
         });
+    }
+    function closeAllSearches() {
+        if (searches.length) {
+            searches.forEach((search) => {
+                const input = search.querySelector('input');
+                const dropdown = search.querySelector('.header__search-block');
 
-        if (!isAnyBurgerOpen() && overlay) {
+                if (dropdown) {
+                    dropdown.classList.remove('active');
+                }
+
+                if (input) {
+                    input.blur();
+                }
+            });
+        }
+
+        if (!isAnyBurgerOpen() && !isAnyPopupOpen() && overlay) {
             body.classList.remove('hidden');
             overlay.classList.remove('active');
         }
     }
-
     if (searches.length) {
         searches.forEach((search) => {
             const input = search.querySelector('input');
@@ -129,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const burgerButton = document.querySelector('.header__burger');
     const burgers = document.querySelectorAll('.burger');
     const closeButtons = document.querySelectorAll('.burger__close');
-
     if (burgerButton && burgers.length && overlay) {
         const openBurger = () => {
             burgerButton.classList.add('active');
@@ -137,15 +146,11 @@ document.addEventListener('DOMContentLoaded', function () {
             overlay.classList.add('active');
             body.classList.add('hidden');
         };
-
         const closeBurger = () => {
             burgerButton.classList.remove('active');
             burgers.forEach(burger => burger.classList.remove('active'));
 
-            if (!searches.length || ![...searches].some(search => {
-                const dropdown = search.querySelector('.header__search-block');
-                return dropdown && dropdown.classList.contains('active');
-            })) {
+            if (!isAnySearchOpen() && !isAnyPopupOpen()) {
                 overlay.classList.remove('active');
                 body.classList.remove('hidden');
             }
@@ -187,11 +192,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const tabs = document.querySelectorAll('.price__tabs-btn');
     const asides = document.querySelectorAll('.price__aside');
     const tables = document.querySelectorAll('.price__content-table');
-
     function isMobile() {
         return window.innerWidth <= 768;
     }
-
     function initPricing() {
         if (!tabs.length || !asides.length || !tables.length) return;
 
@@ -222,7 +225,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
     if (tabs.length && asides.length && tables.length) {
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
@@ -337,7 +339,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // вопрос-ответ
     const faqWrapper = document.querySelector('.faq__wrapper');
-
     if (faqWrapper) {
         const faqItems = faqWrapper.querySelectorAll('.faq__item');
 
@@ -371,7 +372,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // кнопки блога
     const blogButtonsWrapper = document.querySelector('.blog__blog-buttons');
-
     if (blogButtonsWrapper) {
         const blogButtons = blogButtonsWrapper.querySelectorAll('.blog__blog-buttons-item');
 
@@ -389,16 +389,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    
-    //Показать еще
-    const workBottom = document.querySelector('.blog__blogs');
+
+
+    // Показать еще
+    const workBottom = document.querySelector('.blog__blog');
     const workMoreButton = document.querySelector('.buttonJS');
-
     if (workBottom && workMoreButton) {
-
         const workItems = workBottom.querySelectorAll('.work__item');
 
-        // сначала скрываем всё после 6
         workItems.forEach((item, index) => {
             if (index >= 6) {
                 item.classList.remove('active');
@@ -407,23 +405,128 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // если карточек больше 6 — показываем кнопку
         if (workItems.length > 6) {
             workMoreButton.classList.add('active');
 
             workMoreButton.addEventListener('click', () => {
-                // показываем все карточки
                 workItems.forEach(item => item.classList.add('active'));
-
-                // убираем кнопку
                 workMoreButton.classList.remove('active');
             });
 
         } else {
-            // если <= 6 — кнопка не нужна
             workMoreButton.classList.remove('active');
         }
     }
+
+
+
+
+    // кастомные select
+    const selects = document.querySelectorAll('.popup__form-select');
+    if (selects.length) {
+        selects.forEach(select => {
+            const changeBox = select.nextElementSibling;
+            if (!changeBox) return;
+
+            select.addEventListener('click', (e) => {
+                e.stopPropagation();
+
+                document
+                    .querySelectorAll('.popup__form-select-change.active')
+                    .forEach(opened => {
+                        if (opened !== changeBox) opened.classList.remove('active');
+                    });
+
+                changeBox.classList.toggle('active');
+            });
+
+            changeBox.querySelectorAll('span').forEach(span => {
+                span.addEventListener('click', () => {
+                    const value = span.textContent.trim();
+
+                    const buttonSpans = select.querySelectorAll('span');
+                    buttonSpans.forEach(s => {
+                        s.classList.toggle('active', s.textContent.trim() === value);
+                    });
+
+                    changeBox.querySelectorAll('span').forEach(s => {
+                        s.classList.toggle('active', s.textContent.trim() !== value);
+                    });
+
+                    changeBox.classList.remove('active');
+                });
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (
+                !e.target.closest('.popup__form-select') &&
+                !e.target.closest('.popup__form-select-change')
+            ) {
+                document
+                    .querySelectorAll('.popup__form-select-change.active')
+                    .forEach(box => box.classList.remove('active'));
+            }
+        });
+    }
+
+
+
+
+    // попапы
+    function initPopup({
+        popupSelector,
+        openSelector,
+        closeSelector
+    }) {
+        const popup = document.querySelector(popupSelector);
+        const openButtons = document.querySelectorAll(openSelector);
+
+        if (popup && overlay) {
+            const closeButton = popup.querySelector(closeSelector);
+
+            const closePopup = () => {
+                popup.classList.remove('active');
+
+                if (!isAnyBurgerOpen() && !isAnySearchOpen() && !isAnyPopupOpen()) {
+                    body.classList.remove('hidden');
+                    overlay.classList.remove('active');
+                }
+            };
+
+            openButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    popup.classList.add('active');
+                    body.classList.add('hidden');
+                    overlay.classList.add('active');
+                });
+            });
+
+            if (closeButton) {
+                closeButton.addEventListener('click', closePopup);
+            }
+
+            document.addEventListener('click', (e) => {
+                const isPopupOpen = popup.classList.contains('active');
+                const isClickOutside = !popup.contains(e.target) && !e.target.closest(openSelector);
+
+                if (isPopupOpen && isClickOutside) {
+                    closePopup();
+                }
+            });
+        }
+    }
+    initPopup({
+        popupSelector: '.popup__consultation',
+        openSelector: '[data-popup="consultation"]',
+        closeSelector: '.popup__close'
+    });
+    initPopup({
+        popupSelector: '.popup__book',
+        openSelector: '[data-popup="book"]',
+        closeSelector: '.popup__close-book'
+    });
 
 
 
