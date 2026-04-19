@@ -2953,6 +2953,71 @@ body {
     }
 }
 
+.error {
+    padding: 200px 0;
+
+    &__row {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 800;
+        font-size: 451px;
+        letter-spacing: -0.1em;
+        color: var(--red);
+    }
+
+    &__left {
+        flex-shrink: 0;
+    }
+
+    &__right {
+        flex-shrink: 0;
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -150px;
+    }
+
+    &__subtitle {
+        font-family: var(--second-family);
+        font-weight: 800;
+        font-size: 64px;
+        color: var(--grey);
+        margin-top: -140px;
+        margin-left: -50px;
+    }
+}
+
+.thanks {
+    &__row {
+        flex-direction: column;
+        align-items: center;
+        padding: 200px 0 100px 0;
+
+        & .title {
+            color: var(--red);
+            text-align: center;
+        }
+
+        & .subtitle {
+            color: var(--red);
+            text-align: center;
+            max-width: 900px;
+            margin: 20px 0 40px 0;
+        }
+
+        & a {
+            text-align: center;
+        }
+    }
+}
+
 @media (max-width: 1440px) {
     .article {
         &__title {
@@ -2999,6 +3064,16 @@ body {
                     font-size: 18px;
                 }
             }
+        }
+    }
+
+    .error {
+        &__title {
+            font-size: 350px;
+        }
+    
+        &__subtitle {
+            margin-top: -110px;
         }
     }
 }
@@ -3349,6 +3424,24 @@ body {
 
         &__subtitle {
             font-size: 20px;
+        }
+    }
+
+    .error {
+        padding: 150px 0 100px 0;
+        
+        &__title {
+            font-size: 250px;
+        }
+
+        &__middle {
+            margin-top: -100px;
+        }
+
+        &__subtitle {
+            margin-top: -80px;
+            margin-left: -30px;
+            font-size: 50px;
         }
     }
 }
@@ -4185,6 +4278,27 @@ body {
 
         &__wrapper {
             gap: 20px;
+        }
+    }
+
+    .error {
+        padding: 100px 0 50px 0;
+
+        &__middle {
+            margin-top: 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__subtitle {
+            margin-top: -40px;
+            margin-left: 0;
+            font-size: 30px;
+        }
+
+        &__title {
+            font-size: 150px;
         }
     }
 }
