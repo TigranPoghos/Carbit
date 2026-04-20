@@ -994,7 +994,12 @@ body {
         display: flex;
         flex-direction: column;
         padding: 16px;
+        transition: .4s;
         justify-content: space-between;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
 
         &-img {
             border-radius: 10px;
@@ -1029,9 +1034,10 @@ body {
             border-radius: 10px;
             padding: 16px;
             height: 100%;
+            transition: .4s;
 
             &:hover {
-                background: rgba(255, 255, 255, 0.3);
+                background: rgba(0, 0, 0, 0.1);
             }
         }
     }
@@ -1522,6 +1528,13 @@ body {
         background: var(--white-1);
         width: calc(50% - 10px);
         display: flex;
+        transition: .4s;
+
+        &:hover {
+            & .add__item-left-a {
+                transform: translate(-50%, -10px);
+            }
+        }
 
         &-more {
             display: none;
@@ -1566,6 +1579,17 @@ body {
                 min-width: 215px;
                 max-width: max-content;
                 margin-top: auto;
+                transition: .4s;
+                box-shadow: 
+                    0 10px 30px rgba(255, 255, 255, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+                &:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 
+                        0 15px 40px rgba(255, 255, 255, 0.6),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+                }
             }
         }
 
@@ -1579,7 +1603,7 @@ body {
                 border-radius: 5px;
             }
 
-            & a {
+            &-a {
                 position: absolute;
                 bottom: 5px;
                 left: 50%;
@@ -1592,6 +1616,7 @@ body {
                 max-width: 164px;
                 align-items: center;
                 background: var(--white-1);
+                transition: .4s;
 
                 & span {
                     font-family: var(--font-family);
@@ -1927,6 +1952,7 @@ body {
         background: var(--white-2);
         width: 100%;
         padding: 24px;
+        cursor: pointer;
         gap: 20px;
         transition: .5s;
 
@@ -1966,6 +1992,11 @@ body {
         min-width: 200px;
     }
 
+    &__read {
+        color: var(--red);
+        margin-top: 5px;
+    }
+
     &__row {
         flex-direction: column;
         align-items: center;
@@ -1990,6 +2021,7 @@ body {
 
         & .work__item {
             display: none;
+            gap: 5px;
 
             &.active {
                 display: flex;
@@ -2236,6 +2268,7 @@ body {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            justify-content: space-between;
         }
 
         &-media {
@@ -3797,6 +3830,7 @@ body {
 
             &-row {
                 grid-auto-columns: 87px; 
+                background: rgba(255, 255, 255, 0.05);
             }
 
             &-head {
@@ -3808,6 +3842,8 @@ body {
             }
 
             &-text {
+                padding: 10px;
+
                 & p {
                     font-size: 14px
                 }
@@ -3819,6 +3855,7 @@ body {
 
             &-title {
                 font-size: 14px;
+                color: rgba(25, 24, 24, 0.5);
             }
         }
 
